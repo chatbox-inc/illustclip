@@ -1,0 +1,111 @@
+.site-navi {
+  font-size: 14px;
+  padding: 25px 0px 25px 0px; }
+  .site-navi .arrow {
+    margin: 0 10px 0 10px;
+    color: #A1A1A1; }
+  .site-navi a {
+    text-decoration: none;
+    color: #A1A1A1; }
+
+.concept .background-images {
+  margin: 20px auto;
+  width: 500px;
+  height: 10px;
+  position: relative;
+  z-index: -1000; }
+  .concept .background-images .circle06 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background: #EC6C4D; }
+  .concept .background-images .circle01s {
+    position: absolute;
+    top: 25px;
+    left: -60px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
+    background-size: 8px 8px;
+    transform: rotate(10deg); }
+  .concept .background-images .circle02s {
+    position: absolute;
+    top: 150px;
+    right: -140px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-image: linear-gradient(-45deg, transparent 25%, #ED8E71 25%, #ED8E71 50%, transparent 50%, transparent 75%, #ED8E71 75%, #ED8E71);
+    background-size: 8px 8px;
+    transform: rotate(10deg); }
+  .concept .background-images .circle03s {
+    position: absolute;
+    top: 430px;
+    right: -20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
+    background-size: 8px 8px;
+    transform: rotate(10deg); }
+  .concept .background-images .circle04 {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 470px;
+    height: 470px;
+    border-radius: 100%;
+    background-image: linear-gradient(-45deg, transparent 25%, #ED8E71 25%, #ED8E71 50%, transparent 50%, transparent 75%, #ED8E71 75%, #ED8E71);
+    background-size: 8px 8px;
+    transform: rotate(10deg);
+    z-index: 1; }
+  .concept .background-images .circle05 {
+    position: absolute;
+    top: 30px;
+    left: -25px;
+    width: 470px;
+    height: 470px;
+    border-radius: 100%;
+    background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
+    background-size: 8px 8px;
+    transform: rotate(10deg);
+    z-index: -1; }
+  .concept .background-images .clip {
+    position: absolute;
+    width: 160px;
+    top: -30px;
+    right: -50px; }
+  .concept .background-images .guide01 {
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    left: -130px; }
+
+.concept .concept-textarea {
+  width: 100%;
+  padding: 40px 0;
+  margin-bottom: 190px;
+  text-align: center; }
+  .concept .concept-textarea .concept-box {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    color: #ec6c4d;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 13px; }
+  .concept .concept-textarea .concept-text {
+    padding: 15px 0;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 2; }
+
+.trouble-point {
+  background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
+  background-size: 8px 8px; }

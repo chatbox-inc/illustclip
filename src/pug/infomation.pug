@@ -1,0 +1,52 @@
+extends common/layout
+
+block title
+    meta(title="infomation")
+block css
+    link(rel='stylesheet' href='/css/infomation.css')
+block main
+    .container
+        p.site-navi
+            a(href='/') topページ
+            span.arrow >
+            a(href='infomation.html') インフォメーション
+
+    .infomation
+        .concept
+            .background-images
+                .circle01s
+                .circle02s
+                .circle03s
+                .circle04
+                .circle05
+                .circle06
+                img.clip(src='img/clip.svg')
+                img.guide01(src='img/illust/woman_guide01.png')
+            .concept-textarea
+                div
+                    .concept-box イラストクリップの
+                div
+                    .concept-box コンセプト
+                .concept-text イラストクリップは・・・・
+                    p ここにコンセプトを書く
+                    p ここにコンセプトを書く
+
+        .trouble-point
+            h1 こんなお悩みはありませんか？
+            p ランディングページの制作時、イラスト素材集めで困った経験はありませんか？
+            .illust-area
+                .box1
+                    h2 ピッタリ合う表情がない・・・
+                    p うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+                .box2
+                    h2 絵柄が違うので統一感がでない・・・
+                    p うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+                .illust-good
+                .illust-bad
+                .illust-worry-woman
+                .illust-shining-eye
+                .illust-usually-eye
+        .solution
+            h1 イラストクリップなら
+            h1 表情豊かなイラストがセットで見つかる！
+            img(src='img/illust/lp-sample_illustclip.png')
