@@ -107,5 +107,133 @@
     line-height: 2; }
 
 .trouble-point {
+  height: 600px;
   background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
-  background-size: 8px 8px; }
+  background-size: 8px 8px;
+  padding-top: 30px; }
+  .trouble-point .title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 60px;
+    border-radius: 2px;
+    background: #42BDE0;
+    line-height: 60px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff; }
+  .trouble-point .ask {
+    color: #7C7E80;
+    text-align: center;
+    font-weight: bold; }
+  .trouble-point .illust-area {
+    position: relative; }
+    .trouble-point .illust-area .box {
+      position: absolute;
+      width: 400px;
+      height: 150px;
+      border-radius: 150px;
+      background: #fff;
+      padding: 20px; }
+    .trouble-point .illust-area .box-title {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #42BDE0; }
+    .trouble-point .illust-area .box-description {
+      margin: 0 40px;
+      line-height: 25px;
+      color: #7C7E80; }
+    .trouble-point .illust-area .box1 {
+      left: 140px;
+      top: 50px; }
+    .trouble-point .illust-area .box2 {
+      top: 210px;
+      left: 700px; }
+    .trouble-point .illust-area .bad {
+      position: absolute;
+      width: 100px;
+      top: 220px;
+      left: 240px; }
+    .trouble-point .illust-area .good {
+      position: absolute;
+      width: 90px;
+      top: 240px;
+      left: 350px; }
+    .trouble-point .illust-area .designer01 {
+      position: absolute;
+      width: 200px;
+      top: 50px;
+      left: 550px; }
+    .trouble-point .illust-area .woman01 {
+      position: absolute;
+      width: 100px;
+      top: 130px;
+      left: 800px; }
+    .trouble-point .illust-area .woman02 {
+      position: absolute;
+      width: 100px;
+      top: 80px;
+      left: 920px; }
+
+.solution {
+  padding-top: 30px;
+  height: 800px; }
+  .solution .title {
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 2px;
+    line-height: 50px;
+    background: #FFFDB5;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #EC6C4D; }
+  .solution .title01 {
+    width: 300px; }
+  .solution .title02 {
+    margin-top: 20px;
+    width: 500px; }
+  .solution .illust-area {
+    position: relative;
+    height: 70%; }
+    .solution .illust-area .designer02 {
+      position: absolute;
+      width: 200px;
+      top: 250px;
+      left: 230px;
+      transform: rotate(-10deg); }
+    .solution .illust-area .illustclip {
+      position: absolute;
+      width: 600px;
+      top: 50px;
+      left: 380px; }
+    .solution .illust-area .guide04 {
+      position: absolute;
+      width: 200px;
+      top: 250px;
+      left: 970px;
+      transform: rotate(10deg); }
+    .solution .illust-area .description {
+      position: absolute;
+      width: 500px;
+      top: 420px;
+      left: 460px;
+      line-height: 30px;
+      text-align: center;
+      color: #7C7E80; }
+  .solution .points {
+    text-align: center; }
+    .solution .points .point {
+      display: inline-block;
+      width: 170px;
+      height: 30px;
+      border-radius: 45px;
+      padding-top: 15px;
+      background: #EC6C4D;
+      color: #fff; }
+    .solution .points .point:not(last-child) {
+      margin-right: 30px; }
