@@ -1,4 +1,6 @@
-@import "common/mixin";
+@import 'common/mixin';
+@import 'lib/variables';
+
 .site-navi {
     font-size: 14px;
     padding: 25px 0px 25px 0px;
@@ -124,6 +126,159 @@
 }
 
 .trouble-point {
+    height: 600px;
     background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
     background-size: 8px 8px;
+    padding-top: 30px;
+    .title {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 500px;
+        height: 60px;
+        border-radius: 2px;
+        background: $clr_blue;
+        line-height: 60px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .ask {
+        color: $clr_gray;
+        text-align: center;
+        font-weight: bold;
+    }
+    .illust-area {
+        position: relative;
+        .box {
+            position: absolute;
+            width: 400px;
+            height: 150px;
+            border-radius: 150px;
+            background: #fff;
+            padding: 20px;
+        }
+        .box-title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: $clr_blue;
+        }
+        .box-description {
+            margin: 0 40px;
+            line-height: 25px;
+            color: $clr_gray;
+        }
+        .box1 {
+            left: 140px;
+            top: 50px;
+        }
+        .box2 {
+            top: 210px;
+            left: 700px;
+        }
+        .bad {
+            position: absolute;
+            width: 100px;
+            top: 220px;
+            left: 240px;
+        }
+        .good {
+            position: absolute;
+            width: 90px;
+            top: 240px;
+            left: 350px;
+        }
+        .designer01 {
+            position: absolute;
+            width: 200px;
+            top: 50px;
+            left: 550px;
+        }
+        .woman01 {
+            position: absolute;
+            width: 100px;
+            top: 130px;
+            left: 800px;
+        }
+        .woman02 {
+            position: absolute;
+            width: 100px;
+            top: 80px;
+            left: 920px;
+        }
+    }
+}
+
+.solution {
+    padding-top: 30px;
+    height: 800px;
+    .title {
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 2px;
+        line-height: 50px;
+        background: $clr_yellow;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: $clr_orange;
+    }
+    .title01 {
+        width: 300px;
+    }
+    .title02 {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .illust-area {
+        position: relative;
+        height: 70%;
+        .designer02 {
+            position: absolute;
+            width: 200px;
+            top: 250px;
+            left: 230px;
+            transform: rotate(-10deg);
+        }
+        .illustclip {
+            position: absolute;
+            width: 600px;
+            top: 50px;
+            left: 380px;
+        }
+        .guide04 {
+            position: absolute;
+            width: 200px;
+            top: 250px;
+            left: 970px;
+            transform: rotate(10deg);
+        }
+        .description {
+            position: absolute;
+            width: 500px;
+            top: 420px;
+            left: 460px;
+            line-height: 30px;
+            text-align: center;
+            color: $clr_gray;
+        }
+    }
+    .points {
+        text-align: center;
+        .point {
+            display: inline-block;
+            width: 170px;
+            height: 30px;
+            border-radius: 45px;
+            padding-top: 15px;
+            background: $clr_orange;
+            color: #fff;
+        }
+        .point:not(last-child) {
+            margin-right: 30px;
+        }
+    }
 }
