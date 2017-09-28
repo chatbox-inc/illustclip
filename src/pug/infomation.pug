@@ -60,14 +60,64 @@ block main
                 li.point クレジット表記不要！
         .usage
             h1.title 様々な場面で利用できます！
-            p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-            ul
-                li
-                    .usage-title ランディングページの制作に
-                    img.usage-img(src='img/illust/item_pc.png')
-                li
-                    .usage-title 企画書の制作に
-                    img.usage-img(src='img/illust/item_proposal.png')
-                li
-                    .usage-title プレゼンのスライドに
-                    img.usage-img(src='img/illust/item_slide.png')
+            p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            ul.scenes
+                li.scene
+                    .scene-title ランディングページの制作に
+                    .scene-img-wrapper
+                        img.scene-img.pc(src='img/illust/item_pc.png')
+                li.scene
+                    .scene-title 企画書の制作に
+                    .scene-img-wrapper
+                        img.scene-img.proposal(src='img/illust/item_proposal.png')
+                li.scene
+                    .scene-title プレゼンのスライドに
+                    .scene-img-wrapper
+                        img.scene-img.slide(src='img/illust/item_slide.png')
+        .terms
+            h1.title 利用規約
+            .baloon.baloon01
+                .baloon-mouth.baloon-mouth01
+                p.baloon-text Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            .baloon.baloon02
+                .baloon-mouth.baloon-mouth02
+                p.baloon-text A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            .baloon.baloon01
+                .baloon-mouth.baloon-mouth01
+                p.baloon-text Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            .baloon.baloon02
+                .baloon-mouth.baloon-mouth02
+                p.baloon-text A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            .baloon.baloon01
+                .baloon-mouth.baloon-mouth01
+                p.baloon-text Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            .baloon.baloon02
+                .baloon-mouth.baloon-mouth02
+                p.baloon-text A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
+            .illust-area
+                img.designer03(src='img/illust/woman_designer03.png')
+                img.guide03(src='img/illust/woman_guide03.png')
+        .profile
+            h1.title 描いてる人
+            .introduction
+                img.icon(src='img/yasui.jpg')
+                h2.name 安井 利紗
+                h3.position 株式会社chatbox デザイナー
+                p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらお仕事のご依頼はchatboxお問い合わせページからどうぞ
+            .link-wrapper
+                a.link(href='#') chatboxお問い合わせページへ
+                    img.symbol(src='img/logo_chatbox-symbol.svg')
+        .forms
+            h1.title リクエスト受付フォーム
+            p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら
+            .form
+                .name-form
+                    label.label お名前
+                    input.name(type='text')
+                .content-form
+                    label.label 内容
+                    textarea.content
+            .confirm-wrapper
+                a.confirm(href='#') 確認画面へ
+            .top-wrapper
+                a.top(href='#') TOPに戻る

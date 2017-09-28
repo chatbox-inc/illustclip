@@ -3,10 +3,10 @@
   padding: 25px 0px 25px 0px; }
   .site-navi .arrow {
     margin: 0 10px 0 10px;
-    color: #A1A1A1; }
+    color: #7C7E80; }
   .site-navi a {
     text-decoration: none;
-    color: #A1A1A1; }
+    color: #7C7E80; }
 
 .concept .background-images {
   margin: 20px auto;
@@ -39,7 +39,7 @@
     width: 70px;
     height: 70px;
     border-radius: 100%;
-    background-image: linear-gradient(-45deg, transparent 25%, #ED8E71 25%, #ED8E71 50%, transparent 50%, transparent 75%, #ED8E71 75%, #ED8E71);
+    background-image: linear-gradient(-45deg, transparent 25%, #ED8566 25%, #ED8566 50%, transparent 50%, transparent 75%, #ED8566 75%, #ED8566);
     background-size: 8px 8px;
     transform: rotate(10deg); }
   .concept .background-images .circle03s {
@@ -59,7 +59,7 @@
     width: 470px;
     height: 470px;
     border-radius: 100%;
-    background-image: linear-gradient(-45deg, transparent 25%, #ED8E71 25%, #ED8E71 50%, transparent 50%, transparent 75%, #ED8E71 75%, #ED8E71);
+    background-image: linear-gradient(-45deg, transparent 25%, #ED8566 25%, #ED8566 50%, transparent 50%, transparent 75%, #ED8566 75%, #ED8566);
     background-size: 8px 8px;
     transform: rotate(10deg);
     z-index: 1; }
@@ -94,7 +94,7 @@
     display: inline-block;
     padding: 12px 20px;
     background: white;
-    color: #ec6c4d;
+    color: #EC6C4D;
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
@@ -122,7 +122,7 @@
     text-align: center;
     font-size: 28px;
     font-weight: bold;
-    color: #fff; }
+    color: #FFFFFF; }
   .trouble-point .ask {
     color: #7C7E80;
     text-align: center;
@@ -134,7 +134,7 @@
       width: 400px;
       height: 150px;
       border-radius: 150px;
-      background: #fff;
+      background: #FFFFFF;
       padding: 20px; }
     .trouble-point .illust-area .box-title {
       margin-top: 20px;
@@ -234,6 +234,208 @@
       border-radius: 45px;
       padding-top: 15px;
       background: #EC6C4D;
-      color: #fff; }
+      color: #FFFFFF; }
     .solution .points .point:not(last-child) {
       margin-right: 30px; }
+
+.usage {
+  height: 530px;
+  background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
+  background-size: 8px 8px;
+  padding-top: 30px; }
+  .usage .title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 350px;
+    height: 40px;
+    border-radius: 2px;
+    line-height: 40px;
+    background: #ED8566;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF; }
+  .usage .description {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 600px;
+    line-height: 30px;
+    text-align: center;
+    color: #7C7E80; }
+  .usage .scenes {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center; }
+  .usage .scene:not(last-child) {
+    margin: 20px; }
+  .usage .scene-title {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #7C7E80; }
+  .usage .scene-img-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #FFFFFF;
+    border-radius: 50%; }
+    .usage .scene-img-wrapper .scene-img {
+      position: absolute;
+      margin: 0 auto;
+      width: 120px; }
+    .usage .scene-img-wrapper .pc {
+      top: 20%;
+      left: 20%; }
+    .usage .scene-img-wrapper .proposal {
+      top: 30%;
+      left: 20%; }
+    .usage .scene-img-wrapper .slide {
+      top: 25%;
+      left: 20%; }
+
+.terms {
+  height: 900px;
+  padding-top: 30px; }
+  .terms .title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #7C7E80; }
+  .terms .baloon {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 500px;
+    height: 100px;
+    border-radius: 30px; }
+    .terms .baloon .baloon-mouth {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+      transform: rotate(45deg); }
+  .terms .baloon01 {
+    background: #FFFFFF; }
+    .terms .baloon01 .baloon-mouth01 {
+      top: 25px;
+      left: -15px;
+      background: #FFFFFF; }
+  .terms .baloon02 {
+    background: #FFFDB5; }
+    .terms .baloon02 .baloon-mouth02 {
+      top: 25px;
+      left: 460px;
+      background: #FFFDB5; }
+  .terms .baloon-text {
+    position: absolute;
+    margin: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #7C7E80; }
+  .terms .illust-area {
+    position: relative; }
+    .terms .illust-area .designer03 {
+      position: absolute;
+      width: 170px;
+      top: -820px;
+      left: 250px; }
+    .terms .illust-area .guide03 {
+      position: absolute;
+      width: 200px;
+      top: -350px;
+      left: 1000px; }
+
+.profile {
+  height: 400px;
+  background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
+  background-size: 8px 8px;
+  padding-top: 30px; }
+  .profile .title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    background: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7C7E80; }
+  .profile .introduction {
+    margin: 0 auto;
+    width: 570px; }
+    .profile .introduction .icon {
+      float: left;
+      margin-left: 70px;
+      margin-right: 30px;
+      margin-bottom: 60px;
+      width: 170px;
+      border-radius: 50%; }
+    .profile .introduction .name {
+      font-size: 22px;
+      color: #7C7E80;
+      margin-bottom: 20px; }
+    .profile .introduction .position {
+      font-size: 18px;
+      color: #7C7E80;
+      margin-bottom: 20px; }
+    .profile .introduction .description {
+      color: #7C7E80;
+      line-height: 30px; }
+  .profile .link-wrapper {
+    clear: both;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 270px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    background: #EC6C4D;
+    text-align: center;
+    font-weight: bold; }
+    .profile .link-wrapper .link {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .profile .link-wrapper .link .symbol {
+        width: 15px;
+        margin-left: 8px; }
+
+.forms {
+  padding-top: 30px; }
+  .forms .title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #7C7E80; }
+  .forms .description {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 600px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #7C7E80; }
+  .forms .form {
+    width: 600px;
+    margin: 0 auto; }
+    .forms .form .label {
+      color: #7C7E80; }
+    .forms .form .name {
+      margin-left: 20px;
+      margin-bottom: 30px;
+      width: 500px;
+      height: 40px;
+      border-radius: 40px;
+      outline: none;
+      border: 0; }
+    .forms .form .content {
+      margin-left: 20px;
+      width: 500px;
+      height: 200px;
+      border-radius: 40px;
+      resize: none;
+      outline: none;
+      border: 0; }
