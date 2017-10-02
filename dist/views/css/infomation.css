@@ -362,7 +362,7 @@
       left: 650px; }
 
 .profile {
-  height: 430px;
+  height: 410px;
   background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
   background-size: 8px 8px;
   padding-top: 30px; }
@@ -421,7 +421,11 @@
       margin-left: 8px; }
 
 .forms {
+  height: 700px;
   padding-top: 30px; }
+  .forms .container {
+    width: 710px;
+    margin: 0 auto; }
   .forms .title {
     margin-bottom: 30px;
     text-align: center;
@@ -440,20 +444,57 @@
     width: 600px;
     margin: 0 auto; }
     .forms .form .label {
+      display: inline-block;
+      width: 60px;
       color: #7C7E80; }
+    .forms .form input, .forms .form textarea {
+      color: #7C7E80;
+      font-size: 16px; }
     .forms .form .name {
-      margin-left: 20px;
       margin-bottom: 30px;
+      padding-left: 20px;
       width: 500px;
       height: 40px;
       border-radius: 40px;
       outline: none;
       border: 0; }
     .forms .form .content {
-      margin-left: 20px;
+      padding-left: 20px;
+      padding-top: 20px;
       width: 500px;
       height: 200px;
+      vertical-align: top;
       border-radius: 40px;
       resize: none;
       outline: none;
       border: 0; }
+  .forms .confirm {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    background: #EC6C4D;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF; }
+  .forms .top {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 0 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #EC6C4D;
+    line-height: 40px;
+    background: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #EC6C4D; }

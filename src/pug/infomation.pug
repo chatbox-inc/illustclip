@@ -3,6 +3,7 @@ extends common/layout
 block title
     meta(title="infomation")
 block css
+    link(rel='stylesheet' href='/css/font-awesome.min.css')
     link(rel='stylesheet' href='/css/infomation.css')
 block main
     .container
@@ -112,16 +113,17 @@ block main
                 a.link(href='#') chatboxお問い合わせページへ
                     img.symbol(src='img/logo_chatbox-symbol.svg')
         .forms
-            h1.title リクエスト受付フォーム
-            p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら
-            .form
-                .name-form
-                    label.label お名前
-                    input.name(type='text')
-                .content-form
-                    label.label 内容
-                    textarea.content
-            .confirm-wrapper
-                a.confirm(href='#') 確認画面へ
-            .top-wrapper
-                a.top(href='#') TOPに戻る
+            .container
+                h1.title リクエスト受付フォーム
+                p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら
+                .form
+                    .name-form
+                        label.label お名前
+                        input.name(type='text')
+                    .content-form
+                        label.label 内容
+                        textarea.content
+                a.confirm(href='#') 確認画面へ&nbsp;
+                    i.fa.fa-paper-plane-o(aria-hidden='true')
+                a.top(href='#') TOPに戻る&nbsp;
+                    i.fa.fa-home(aria-hidden='true')
