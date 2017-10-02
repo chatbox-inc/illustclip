@@ -615,34 +615,74 @@
                 left: 85px;
             }
             .bad {
-                position: absolute;
-                width: 100px;
                 top: 170px;
                 left: -5px;
             }
             .good {
-                position: absolute;
-                width: 90px;
                 top: 185px;
                 left: 75px;
             }
             .designer01 {
-                position: absolute;
-                width: 200px;
                 top: 110px;
                 left: 495px;
             }
             .woman01 {
-                position: absolute;
-                width: 100px;
                 top: 490px;
                 left: 315px;
             }
             .woman02 {
-                position: absolute;
-                width: 100px;
                 top: 470px;
                 left: 425px;
+            }
+        }
+    }
+
+    .solution {
+        padding-top: 30px;
+        height: 950px;
+        .container {
+            width: 710px;
+            margin: 0 auto;
+        }
+        .illust-area {
+            position: relative;
+            height: 60%;
+            .designer02 {
+                position: absolute;
+                width: 200px;
+                top: 500px;
+                left: 50px;
+                transform: rotate(-10deg);
+            }
+            .illustclip {
+                position: absolute;
+                width: 600px;
+                top: 50px;
+                left: 40px;
+            }
+            .guide04 {
+                position: absolute;
+                width: 200px;
+                top: 500px;
+                left: 450px;
+                transform: rotate(10deg);
+            }
+            .description {
+                position: absolute;
+                width: 500px;
+                top: 420px;
+                left: 120px;
+                line-height: 30px;
+                text-align: center;
+                color: $clr_gray;
+            }
+        }
+        .points {
+            margin: 0 auto;
+            width: 200px;
+            .point {
+                display: block;
+                margin-bottom: 30px;
             }
         }
     }
