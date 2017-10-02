@@ -362,7 +362,7 @@
       left: 650px; }
 
 .profile {
-  height: 400px;
+  height: 430px;
   background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
   background-size: 8px 8px;
   padding-top: 30px; }
@@ -402,23 +402,23 @@
     .profile .introduction .description {
       color: #7C7E80;
       line-height: 30px; }
-  .profile .link-wrapper {
-    clear: both;
+  .profile .link {
+    display: block;
     margin: 0 auto;
     margin-top: 30px;
+    padding: 0 20px;
     width: 270px;
     height: 40px;
     border-radius: 40px;
     line-height: 40px;
     background: #EC6C4D;
     text-align: center;
-    font-weight: bold; }
-    .profile .link-wrapper .link {
-      text-decoration: none;
-      color: #FFFFFF; }
-      .profile .link-wrapper .link .symbol {
-        width: 15px;
-        margin-left: 8px; }
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF; }
+    .profile .link .symbol {
+      width: 15px;
+      margin-left: 8px; }
 
 .forms {
   padding-top: 30px; }

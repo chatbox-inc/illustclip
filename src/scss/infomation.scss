@@ -432,7 +432,7 @@
     }
 }
 .profile {
-    height: 400px;
+    height: 430px;
     background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
     background-size: 8px 8px;
     padding-top: 30px;
@@ -479,10 +479,11 @@
             line-height: 30px;
         }
     }
-    .link-wrapper {
-        clear: both;
+    .link {
+        display: block;
         margin: 0 auto;
         margin-top: 30px;
+        padding: 0 20px;
         width: 270px;
         height: 40px;
         border-radius: 40px;
@@ -490,13 +491,11 @@
         background: $clr_orange;
         text-align: center;
         font-weight: bold;
-        .link {
-            text-decoration: none;
-            color: $clr_white;
-            .symbol {
-                width: 15px;
-                margin-left: 8px;
-            }
+        text-decoration: none;
+        color: $clr_white;
+        .symbol {
+            width: 15px;
+            margin-left: 8px;
         }
     }
 }
