@@ -130,6 +130,10 @@
     background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
     background-size: 8px 8px;
     padding-top: 30px;
+    .container {
+        width: 710px;
+        margin: 0 auto;
+    }
     .title {
         margin: 0 auto;
         margin-bottom: 30px;
@@ -149,6 +153,9 @@
         font-weight: bold;
     }
     .illust-area {
+        margin: 0;
+        padding: 0;
+        height: 500px;
         position: relative;
         .box {
             position: absolute;
@@ -172,42 +179,42 @@
             color: $clr_gray;
         }
         .box1 {
-            left: 140px;
             top: 50px;
+            left: -100px;
         }
         .box2 {
             top: 210px;
-            left: 700px;
+            left: 450px;
         }
         .bad {
             position: absolute;
             width: 100px;
             top: 220px;
-            left: 240px;
+            left: -100px;
         }
         .good {
             position: absolute;
             width: 90px;
             top: 240px;
-            left: 350px;
+            left: 100px;
         }
         .designer01 {
             position: absolute;
             width: 200px;
             top: 50px;
-            left: 550px;
+            left: 300px;
         }
         .woman01 {
             position: absolute;
             width: 100px;
             top: 130px;
-            left: 800px;
+            left: 550px;
         }
         .woman02 {
             position: absolute;
             width: 100px;
             top: 80px;
-            left: 920px;
+            left: 670px;
         }
     }
 }
@@ -215,6 +222,10 @@
 .solution {
     padding-top: 30px;
     height: 800px;
+    .container {
+        width: 710px;
+        margin: 0 auto;
+    }
     .title {
         height: 50px;
         margin: 0 auto;
@@ -240,27 +251,27 @@
             position: absolute;
             width: 200px;
             top: 250px;
-            left: 230px;
+            left: -110px;
             transform: rotate(-10deg);
         }
         .illustclip {
             position: absolute;
             width: 600px;
             top: 50px;
-            left: 380px;
+            left: 40px;
         }
         .guide04 {
             position: absolute;
             width: 200px;
             top: 250px;
-            left: 970px;
+            left: 630px;
             transform: rotate(10deg);
         }
         .description {
             position: absolute;
             width: 500px;
             top: 420px;
-            left: 460px;
+            left: 120px;
             line-height: 30px;
             text-align: center;
             color: $clr_gray;
@@ -288,6 +299,10 @@
     background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
     background-size: 8px 8px;
     padding-top: 30px;
+    .container {
+        width: 710px;
+        margin: 0 auto;
+    }
     .title {
         margin: 0 auto;
         margin-bottom: 30px;
@@ -351,9 +366,13 @@
 .terms {
     height: 900px;
     padding-top: 30px;
+    .container {
+        width: 710px;
+        margin: 0 auto;
+    }
     .title {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-size: 28px;
         font-weight: bold;
         color: $clr_gray;
@@ -402,13 +421,13 @@
             position: absolute;
             width: 170px;
             top: -820px;
-            left: 250px;
+            left: -100px;
         }
         .guide03 {
             position: absolute;
             width: 200px;
             top: -350px;
-            left: 1000px;
+            left: 650px;
         }
     }
 }
@@ -417,6 +436,10 @@
     background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
     background-size: 8px 8px;
     padding-top: 30px;
+    .container {
+        width: 710px;
+        margin: 0 auto;
+    }
     .title {
         margin: 0 auto;
         margin-bottom: 30px;

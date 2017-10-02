@@ -111,6 +111,9 @@
   background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
   background-size: 8px 8px;
   padding-top: 30px; }
+  .trouble-point .container {
+    width: 710px;
+    margin: 0 auto; }
   .trouble-point .title {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -128,6 +131,9 @@
     text-align: center;
     font-weight: bold; }
   .trouble-point .illust-area {
+    margin: 0;
+    padding: 0;
+    height: 500px;
     position: relative; }
     .trouble-point .illust-area .box {
       position: absolute;
@@ -148,40 +154,43 @@
       line-height: 25px;
       color: #7C7E80; }
     .trouble-point .illust-area .box1 {
-      left: 140px;
-      top: 50px; }
+      top: 50px;
+      left: -100px; }
     .trouble-point .illust-area .box2 {
       top: 210px;
-      left: 700px; }
+      left: 450px; }
     .trouble-point .illust-area .bad {
       position: absolute;
       width: 100px;
       top: 220px;
-      left: 240px; }
+      left: -100px; }
     .trouble-point .illust-area .good {
       position: absolute;
       width: 90px;
       top: 240px;
-      left: 350px; }
+      left: 100px; }
     .trouble-point .illust-area .designer01 {
       position: absolute;
       width: 200px;
       top: 50px;
-      left: 550px; }
+      left: 300px; }
     .trouble-point .illust-area .woman01 {
       position: absolute;
       width: 100px;
       top: 130px;
-      left: 800px; }
+      left: 550px; }
     .trouble-point .illust-area .woman02 {
       position: absolute;
       width: 100px;
       top: 80px;
-      left: 920px; }
+      left: 670px; }
 
 .solution {
   padding-top: 30px;
   height: 800px; }
+  .solution .container {
+    width: 710px;
+    margin: 0 auto; }
   .solution .title {
     height: 50px;
     margin: 0 auto;
@@ -204,24 +213,24 @@
       position: absolute;
       width: 200px;
       top: 250px;
-      left: 230px;
+      left: -110px;
       transform: rotate(-10deg); }
     .solution .illust-area .illustclip {
       position: absolute;
       width: 600px;
       top: 50px;
-      left: 380px; }
+      left: 40px; }
     .solution .illust-area .guide04 {
       position: absolute;
       width: 200px;
       top: 250px;
-      left: 970px;
+      left: 630px;
       transform: rotate(10deg); }
     .solution .illust-area .description {
       position: absolute;
       width: 500px;
       top: 420px;
-      left: 460px;
+      left: 120px;
       line-height: 30px;
       text-align: center;
       color: #7C7E80; }
@@ -243,6 +252,9 @@
   background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
   background-size: 8px 8px;
   padding-top: 30px; }
+  .usage .container {
+    width: 710px;
+    margin: 0 auto; }
   .usage .title {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -296,9 +308,12 @@
 .terms {
   height: 900px;
   padding-top: 30px; }
+  .terms .container {
+    width: 710px;
+    margin: 0 auto; }
   .terms .title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 28px;
     font-weight: bold;
     color: #7C7E80; }
@@ -339,18 +354,21 @@
       position: absolute;
       width: 170px;
       top: -820px;
-      left: 250px; }
+      left: -100px; }
     .terms .illust-area .guide03 {
       position: absolute;
       width: 200px;
       top: -350px;
-      left: 1000px; }
+      left: 650px; }
 
 .profile {
   height: 400px;
   background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
   background-size: 8px 8px;
   padding-top: 30px; }
+  .profile .container {
+    width: 710px;
+    margin: 0 auto; }
   .profile .title {
     margin: 0 auto;
     margin-bottom: 30px;
