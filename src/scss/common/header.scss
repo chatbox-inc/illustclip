@@ -70,9 +70,10 @@ header {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 760px) {
   header {
     .header-nav {
+      display: none;
       .nav-link {
         display: inline-block;
         margin: 0px 10% 20px 0px;

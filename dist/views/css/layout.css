@@ -96,13 +96,15 @@ header {
         display: inline-block;
         vertical-align: middle; }
 
-@media screen and (max-width: 780px) {
-  header .header-nav .nav-link {
-    display: inline-block;
-    margin: 0px 10% 20px 0px;
-    min-width: 40%; }
-    header .header-nav .nav-link:nth-child(2n) {
-      margin-right: 0px; }
+@media screen and (max-width: 760px) {
+  header .header-nav {
+    display: none; }
+    header .header-nav .nav-link {
+      display: inline-block;
+      margin: 0px 10% 20px 0px;
+      min-width: 40%; }
+      header .header-nav .nav-link:nth-child(2n) {
+        margin-right: 0px; }
   header .site-description {
     width: 80%;
     margin: 0 auto; } }
@@ -149,8 +151,8 @@ footer {
     list-style: none;
     display: inline-block;
     letter-spacing: normal;
-    min-width: 25%;
-    max-width: 25%;
+    min-width: 33.333333333%;
+    max-width: 33.333333333%;
     margin-bottom: 40px; }
     .footer-nav li a {
       text-decoration: none;
