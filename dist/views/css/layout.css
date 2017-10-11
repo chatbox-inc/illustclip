@@ -97,17 +97,28 @@ header {
         vertical-align: middle; }
 
 @media screen and (max-width: 760px) {
-  header .header-nav {
-    display: none; }
-    header .header-nav .nav-link {
-      display: inline-block;
-      margin: 0px 10% 20px 0px;
-      min-width: 40%; }
-      header .header-nav .nav-link:nth-child(2n) {
-        margin-right: 0px; }
-  header .site-description {
-    width: 80%;
-    margin: 0 auto; } }
+  header {
+    height: 90px; }
+    header .header-logo {
+      height: 35px;
+      margin: 0 auto;
+      padding: 0px 0px 5px 0px; }
+      header .header-logo img {
+        height: 100%; }
+    header .header-nav {
+      display: none; }
+      header .header-nav .nav-link {
+        display: inline-block;
+        margin: 0px 10% 20px 0px;
+        min-width: 40%; }
+        header .header-nav .nav-link:nth-child(2n) {
+          margin-right: 0px; }
+    header .site-description {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 10px;
+      padding: 0px 0px 20px 0px;
+      line-height: 1.5; } }
 
 footer {
   background: #EA6D53;
