@@ -4,8 +4,6 @@
 pugとscssのWatchとコンパイル、browserSyncの立ち上げ
 `gulp `
 
-- webpack 
-
 ## gulp 
 - scss : public/src/scss/ -> dist/views/css/
 - pug : public/src/pug -> dist/views/
