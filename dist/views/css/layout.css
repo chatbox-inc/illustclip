@@ -216,5 +216,5 @@ button {
 @media screen and (max-width: 600px) {
   .container {
     width: 100%;
-    padding: 7px;
+    padding: 15px;
     box-sizing: border-box; } }
