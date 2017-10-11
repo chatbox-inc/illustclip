@@ -44,8 +44,9 @@ gulp.task("pug", () => {
 gulp.task('browser-sync', () => {
     browserSync({
         server: {
-            baseDir: "./dist/views"   //ブラウザに表示するディレクトリ
-        }
+            baseDir: "./dist/views",   //ブラウザに表示するディレクトリ
+        },
+        open: "external"  //externalのアドレスで開く
     });
     //ファイルの監視
     //以下のファイルが変わったらリロードする
