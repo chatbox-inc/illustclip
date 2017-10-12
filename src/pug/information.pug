@@ -69,17 +69,17 @@ block main
                 p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
                 ul.scenes
                     li.scene
-                        .scene-title ランディングページの制作に
                         .scene-img-wrapper
                             img.scene-img.pc(src='img/illust/item_pc.png')
+                        .scene-title ランディングページの制作に
                     li.scene
-                        .scene-title 企画書の制作に
                         .scene-img-wrapper
                             img.scene-img.proposal(src='img/illust/item_proposal.png')
+                        .scene-title 企画書の制作に
                     li.scene
-                        .scene-title プレゼンのスライドに
                         .scene-img-wrapper
                             img.scene-img.slide(src='img/illust/item_slide.png')
+
         .terms
             .container
                 h1.title 利用規約
@@ -121,10 +121,10 @@ block main
                 .form
                     .name-form
                         label.label お名前
-                        input.name(type='text')
+                        input.name(type='text' placeholder='お名前')
                     .content-form
                         label.label 内容
-                        textarea.content
+                        textarea.content(placeholder='内容')
                 a.confirm(href='#') 確認画面へ&nbsp;
                     i.fa.fa-paper-plane-o(aria-hidden='true')
                 a.top(href='#') TOPに戻る&nbsp;
