@@ -107,7 +107,7 @@
 
 @media screen and (max-width: 760px) {
   .site-navi {
-    text-align: center; }
+    text-align: left; }
   .center {
     text-align: center; }
   .feature .feature-text p {

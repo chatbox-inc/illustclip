@@ -89,8 +89,8 @@
     font-size: 20px; } }
 
 @media screen and (max-width: 760px) {
-  .site-navi {
-    text-align: center; }
+  p.site-navi {
+    text-align: left; }
   .center {
     text-align: center; }
   .feature .feature-text p {
