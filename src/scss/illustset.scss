@@ -143,7 +143,7 @@
         line-height: 20px;
       }
       & h3 {
-        padding: 0px 0px 30px 0px;
+        padding: 0px 0px 10px 0px;
       }
     }
   }
@@ -152,6 +152,37 @@
       width:90%;
       margin:0 auto;
       line-height:20px;
+    }
+  }
+  .illust-set {
+    & .illust-link {
+      height: 148px;
+      width: 47%;
+      display: inline-block;
+      padding-bottom: 70px;
+      margin-right: 2.6666667%;
+      & a {
+        text-decoration: none;
+        display: block;
+        height: 100%;
+        & .illust {
+          height: 100px;
+          text-align: center;
+          padding: 0;
+          & img {
+            height: 100%;
+          }
+        }
+        & p {
+          font-size: 14px;
+          color: #A5A7A9;
+          font-weight: 600;
+          padding-top: 10px;
+        }
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
     }
   }
 }
