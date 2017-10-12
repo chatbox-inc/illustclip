@@ -72,6 +72,15 @@ header {
 
 @media screen and (max-width: 760px) {
   header {
+    height: 90px;
+    & .header-logo {
+      height: 35px;
+      margin: 0 auto;
+      padding: 0px 0px 5px 0px;
+      & img {
+        height: 100%;
+      }
+    }
     .header-nav {
       display: none;
       .nav-link {
@@ -85,8 +94,11 @@ header {
     }
 
     & .site-description {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
+      font-size: 10px;
+      padding: 0px 0px 20px 0px;
+      line-height: 1.5;
     }
   }
 }
