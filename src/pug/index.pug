@@ -1,29 +1,17 @@
-extends common/layout
+extends common/_layout
 
 block title
     meta(title='home')
-block css
-    link(rel='stylesheet' href='/css/index.css')
 block main
-    .container
+    .container.page-top
         .card-holder
-            a(href="illustset.html").card
+            a(href="/female_std/").card
                     .thumbnail
-                        img(src='img/woman_nomal/woman_nomal03.png')
+                        img(src='/img/female_std/03.png')
                     h3  一般女性のイラストセット
                     p   ２０〜３０代の私服のイラストセットです
-            a(href="illustset.html").card
+            a(href="/male_std/").card
                     .thumbnail
-                        img(src='img/man_nomal/man_nomal04.png')
-                    h3  一般女性のイラストセット
-                    p   ２０〜３０代の私服のイラストセットです
-            a(href="illustset.html").card
-                    .thumbnail
-                        img(src='img/woman_nomal/woman_nomal03.png')
-                    h3  一般女性のイラストセット
-                    p   ２０〜３０代の私服のイラストセットです
-            a(href="illustset.html").card
-                    .thumbnail
-                        img(src='img/man_nomal/man_nomal04.png')
+                        img(src='/img/male_std/03.png')
                     h3  一般女性のイラストセット
                     p   ２０〜３０代の私服のイラストセットです

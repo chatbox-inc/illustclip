@@ -1,0 +1,26 @@
+.page-illust
+    .container.center
+        p.site-navi
+            a(href='/') トップページ
+            span.arrow >
+            a(href=page.back)=page.parentTitle
+            span.arrow >
+            a()=page.title
+        .thumbnail
+            img(src=page.img, alt=page.title)
+        .feature
+            .feature-text
+                h3=page.title
+                each line in page.summary
+                    p=line
+            .downloader
+                a(href=page.img download='illust.png')
+                    button 画像をダウンロード
+                p 画像をクリックすると個別にダウンロードすることができます。
+    .back
+        .container
+            .back-to-top
+                a(href=page.back)
+                    button 一覧に戻る
+                a(href='/')
+                    button トップに戻る

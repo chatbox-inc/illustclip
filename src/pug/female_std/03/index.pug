@@ -1,0 +1,18 @@
+extends ../../common/_layout
+
+block title
+    meta(title="illustset")
+block main
+    -
+      page = {
+        title: "悩む女性のイラスト",
+        parentTitle: "一般女性のイラスト",
+        hero: "/img/female_std/03.png",
+        img: "/img/female_std/01.png",
+        back: "/female_std",
+        summary:[
+            "20~30代の私服の女性のイラストです。",
+            "ターゲットユーザが若い女性や主婦の場合のLP最適です。",
+        ],
+      }
+    include ../../_illust

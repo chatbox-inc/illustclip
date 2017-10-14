@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*トップページ*/
+.card-holder {
+  padding: 60px 0px 50px 0px;
+  width: 100%;
+  margin: 0 auto;
+  letter-spacing: -.4em;
+  text-align: center; }
+
+.card {
+  text-decoration: none;
+  height: 300px;
+  width: 40%;
+  background: #fff;
+  border-bottom: solid 3px #EB856A;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 10% 50px 0px;
+  letter-spacing: normal;
+  position: relative; }
+  .card:nth-child(2n) {
+    margin-right: 0px; }
+  .card:before {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(-45deg, #fff 25%, #FECEBF 25%, #FECEBF 50%, #fff 50%, #fff 75%, #FECEBF 75%, #FECEBF);
+    border-radius: 3px;
+    background-size: 8px 8px;
+    right: -6px;
+    top: 5px;
+    z-index: -1; }
+  .card:after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon_clip.svg");
+    height: 40px;
+    width: 52px;
+    margin-left: 50%;
+    left: -26px;
+    top: -30px; }
+  .card .thumbnail {
+    height: 180px;
+    padding-top: 20px; }
+    .card .thumbnail img {
+      height: 100%; }
+  .card h3 {
+    width: 100%;
+    text-align: center;
+    color: #9C9D9F;
+    font-size: 23px;
+    padding: 15px 0 10px 0; }
+  .card p {
+    font-size: 14px;
+    width: 100%;
+    color: #A9AAAB; }
+
+@media screen and (max-width: 1080px) {
+  .card h3 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 760px) {
+  .card {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: block;
+    height: 250px; }
+    .card:nth-child(2n) {
+      margin: 0 auto;
+      margin-bottom: 40px; }
+    .card h3 {
+      font-size: 18px;
+      bottom: 55px;
+      line-height: 1.4; }
+    .card p {
+      width: 90%;
+      margin: 0 auto;
+      line-height: 1.4; }
+    .card:before {
+      content: "";
+      position: absolute;
+      height: 250px;
+      width: 100%;
+      background-image: linear-gradient(-45deg, #fff 25%, #FECEBF 25%, #FECEBF 50%, #fff 50%, #fff 75%, #FECEBF 75%, #FECEBF);
+      border-radius: 3px;
+      background-size: 8px 8px;
+      right: 0px;
+      top: 5px;
+      z-index: -1; }
+    .card .thumbnail {
+      height: 140px;
+      padding-top: 20px; }
+      .card .thumbnail img {
+        height: 100%; }
+  .card-holder {
+    padding: 40px 0px 50px 0px;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: -.4em;
+    text-align: center; } }

@@ -5,6 +5,7 @@ var plumber = require("gulp-plumber"); //scssとpugの変換でエラーが出�
 var notify = require("gulp-notify"); //デスクトップ通知を行う
 var pug = require("gulp-pug");
 var path = require("path")
+var sourcemaps = require("gulp-sourcemaps")
 
 gulp.task('default', ['scss', 'browser-sync', 'pug', 'watch']); //コマンドプロンプトからgulpと実行された場合に行うタスクの一覧
 gulp.task('build',['scss','pug'])
@@ -25,17 +26,27 @@ gulp.task("scss", () => {
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
+        .pipe(sourcemaps.init())
         .pipe(scss())
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest("./dist/views/css"))
 });
 
 //pugをhtmlに変換
 gulp.task("pug", () => {
-    gulp.src(path.resolve('./src/pug/**.pug'))
+    gulp.src([
+        './src/pug/**/*.pug',
+        '!./src/pug/**/_*.pug',
+    ])
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
-        .pipe(pug())
+        .pipe(pug({
+            locals:{
+                page:{}
+            },
+            pretty: true
+        }))
         .pipe(gulp.dest("./dist/views"))
 });
 
@@ -57,5 +68,7 @@ gulp.task('browser-sync', () => {
 
 //ブラウザリロード処理
 gulp.task('reload', () => {
-    browserSync.reload();
+    setTimeout(function(){
+        browserSync.reload();
+    },500)
 });
