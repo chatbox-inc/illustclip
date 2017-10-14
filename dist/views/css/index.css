@@ -49,9 +49,9 @@ header {
     width: 100%;
     background-image: linear-gradient(-45deg, #fff 25%, #FECEBF 25%, #FECEBF 50%, #fff 50%, #fff 75%, #FECEBF 75%, #FECEBF);
     background-size: 10px 10px;
-    bottom: -5px;
+    bottom: 0px;
     display: block;
-    z-index: -1; }
+    z-index: 1; }
   header .site-description {
     color: #828486;
     font-size: 14px;
@@ -68,10 +68,10 @@ header {
 .header-nav {
   width: 100%;
   padding: 14px 0px 14px 0px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
   .header-nav .nav-link {
-    display: inline-block;
-    margin-right: 6.666666667%;
     min-width: 20%;
     color: #EA6D53;
     text-decoration: none;
@@ -83,8 +83,8 @@ header {
       list-style: none;
       background: #FFFBB8;
       letter-spacing: normal;
-      padding: 8px 0px 8px 0px;
-      margin: 0 auto; }
+      padding: 8px 18px;
+      margin: 0 8px; }
       .header-nav .nav-link li .nav-icon {
         height: 13px;
         display: inline-block;
@@ -97,33 +97,25 @@ header {
         vertical-align: middle; }
 
 @media screen and (max-width: 760px) {
-  header {
-    height: 90px; }
-    header .header-logo {
-      height: 35px;
-      margin: 0 auto;
-      padding: 0px 0px 5px 0px; }
-      header .header-logo img {
-        height: 100%; }
-    header .header-nav {
-      display: none; }
-      header .header-nav .nav-link {
-        display: inline-block;
-        margin: 0px 10% 20px 0px;
-        min-width: 40%; }
-        header .header-nav .nav-link:nth-child(2n) {
-          margin-right: 0px; }
-    header .site-description {
-      width: 100%;
-      margin: 0 auto;
-      font-size: 10px;
-      padding: 0px 0px 20px 0px;
-      line-height: 1.5; } }
+  header .header-logo {
+    height: 35px;
+    margin: 0 auto;
+    padding: 0px 0px 5px 0px; }
+    header .header-logo img {
+      height: 100%; }
+  header .site-description {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 10px 0px;
+    line-height: 1.5; } }
 
 footer {
   background: #EA6D53;
   position: relative;
-  height: auto; }
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  padding-bottom: 20px; }
 
 .footer-texture {
   background-image: url(/img/footer_texture.svg);
@@ -331,7 +323,7 @@ button {
 
 .page-illustset .site-navi {
   font-size: 14px;
-  padding: 25px 0px 25px 0px; }
+  padding: 15px 0px 25px 0px; }
   .page-illustset .site-navi .arrow {
     margin: 0 10px 0 10px;
     color: #A1A1A1; }
@@ -381,34 +373,31 @@ button {
     font-size: 14px; }
 
 .page-illustset .back {
-  background: #fff;
-  padding: 40px 0px 60px 0px; }
+  background: #F7F5F3; }
 
-.page-illustset .illust-set .illust-link {
-  height: 148px;
-  width: 23%;
-  display: inline-block;
-  padding-bottom: 70px;
-  margin-right: 2.6666667%; }
-  .page-illustset .illust-set .illust-link a {
-    text-decoration: none;
-    display: block;
-    height: 100%; }
-    .page-illustset .illust-set .illust-link a .illust {
-      height: 100px;
-      text-align: center;
-      padding: 0; }
-      .page-illustset .illust-set .illust-link a .illust img {
-        height: 100%; }
-    .page-illustset .illust-set .illust-link a p {
-      font-size: 14px;
-      color: #A5A7A9;
-      font-weight: 600;
-      padding-top: 10px; }
-  .page-illustset .illust-set .illust-link:last-child {
-    margin-right: 0px; }
+.page-illustset .illust-set {
+  display: flex; }
+  .page-illustset .illust-set .illust-link {
+    width: 25%;
+    padding: 20px 50px; }
+    .page-illustset .illust-set .illust-link a {
+      text-decoration: none;
+      display: block; }
+      .page-illustset .illust-set .illust-link a .illust {
+        text-align: center;
+        padding: 0; }
+        .page-illustset .illust-set .illust-link a .illust img {
+          width: 100%; }
+      .page-illustset .illust-set .illust-link a p {
+        font-size: 14px;
+        color: #A5A7A9;
+        font-weight: 600;
+        padding-top: 10px; }
+    .page-illustset .illust-set .illust-link:last-child {
+      margin-right: 0px; }
 
 .page-illustset .back-to-top {
+  margin-top: 50px;
   text-align: center; }
   .page-illustset .back-to-top button {
     width: 210px;
@@ -451,29 +440,25 @@ button {
     width: 90%;
     margin: 0 auto;
     line-height: 20px; }
-  .page-illustset .illust-set .illust-link {
-    height: 148px;
-    width: 47%;
-    display: inline-block;
-    padding-bottom: 70px;
-    margin-right: 2.6666667%; }
-    .page-illustset .illust-set .illust-link a {
-      text-decoration: none;
-      display: block;
-      height: 100%; }
-      .page-illustset .illust-set .illust-link a .illust {
-        height: 100px;
-        text-align: center;
-        padding: 0; }
-        .page-illustset .illust-set .illust-link a .illust img {
-          height: 100%; }
-      .page-illustset .illust-set .illust-link a p {
-        font-size: 14px;
-        color: #A5A7A9;
-        font-weight: 600;
-        padding-top: 10px; }
-    .page-illustset .illust-set .illust-link:last-child {
-      margin-right: 0px; } }
+  .page-illustset .illust-set {
+    flex-wrap: wrap;
+    justify-content: center; }
+    .page-illustset .illust-set .illust-link {
+      width: 40%;
+      padding: 5px 10px; }
+      .page-illustset .illust-set .illust-link a {
+        text-decoration: none;
+        display: block; }
+        .page-illustset .illust-set .illust-link a .illust {
+          text-align: center;
+          padding: 0; }
+        .page-illustset .illust-set .illust-link a p {
+          font-size: 14px;
+          color: #A5A7A9;
+          font-weight: 600;
+          padding-top: 10px; }
+      .page-illustset .illust-set .illust-link:last-child {
+        margin-right: 0px; } }
 
 .page-illust .site-navi {
   font-size: 14px;
@@ -527,12 +512,11 @@ button {
     font-size: 14px; }
 
 .page-illust .back {
-  background: #fff;
-  padding: 60px 0px 100px 0px; }
+  background: #F7F5F3; }
 
 .page-illust .back-to-top {
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
   letter-spacing: -.4em;
   text-align: center; }
   .page-illust .back-to-top a {

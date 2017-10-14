@@ -7,22 +7,22 @@ var pug = require("gulp-pug");
 var path = require("path")
 var sourcemaps = require("gulp-sourcemaps")
 
-gulp.task('default', ['scss', 'browser-sync', 'pug', 'watch']); //コマンドプロンプトからgulpと実行された場合に行うタスクの一覧
+gulp.task('default', ['build', 'browser-sync', 'watch']); //コマンドプロンプトからgulpと実行された場合に行うタスクの一覧
 gulp.task('build',['scss','pug'])
 
 //scssとpugの監視をして変換処理させる
 gulp.task('watch', () => {
-    gulp.watch([path.resolve('./src/scss/**.scss')], () => {
+    gulp.watch([path.resolve('./src/scss/**/*.scss')], () => {
         gulp.start(['scss']);
     });
-    gulp.watch([path.resolve('./src/pug/**.pug')], () => {
+    gulp.watch([path.resolve('./src/pug/**/*.pug')], () => {
         gulp.start(['pug']);
     });
 });
 
 //scssをcssに変換
 gulp.task("scss", () => {
-    gulp.src(path.resolve('./src/scss/**.scss'))
+    gulp.src(path.resolve('./src/scss/**/*.scss'))
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))

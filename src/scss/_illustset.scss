@@ -2,7 +2,7 @@
 
 .site-navi {
   font-size: 14px;
-  padding: 25px 0px 25px 0px;
+  padding: 15px 0px 25px 0px;
   & .arrow {
     margin: 0 10px 0 10px;
     color: #A1A1A1;
@@ -62,27 +62,24 @@
 }
 
 .back {
-  background: #fff;
-  padding: 40px 0px 60px 0px;
+  background: #F7F5F3;
+  //padding: 40px 0px 60px 0px;
 }
 
 .illust-set {
-  & .illust-link {
-    height: 148px;
-    width: 23%;
-    display: inline-block;
-    padding-bottom: 70px;
-    margin-right: 2.6666667%;
-    & a {
+  display: flex;
+  .illust-link {
+    width: 25%;
+    padding: 20px 50px;
+    a {
       text-decoration: none;
       display: block;
-      height: 100%;
       & .illust {
-        height: 100px;
+        //height: 100px;
         text-align: center;
         padding: 0;
         & img {
-          height: 100%;
+          width: 100%;
         }
       }
       & p {
@@ -99,6 +96,7 @@
 }
 
 .back-to-top {
+  margin-top: 50px;
   text-align: center;
   & button {
     @include white-button();
@@ -154,23 +152,20 @@
       line-height:20px;
     }
   }
+
   .illust-set {
-    & .illust-link {
-      height: 148px;
-      width: 47%;
-      display: inline-block;
-      padding-bottom: 70px;
-      margin-right: 2.6666667%;
-      & a {
+    flex-wrap: wrap;
+    justify-content: center;
+    .illust-link {
+      width: 40%;
+      padding:5px 10px;
+      a {
         text-decoration: none;
         display: block;
-        height: 100%;
         & .illust {
-          height: 100px;
           text-align: center;
           padding: 0;
           & img {
-            height: 100%;
           }
         }
         & p {
