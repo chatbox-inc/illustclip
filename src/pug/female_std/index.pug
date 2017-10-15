@@ -1,7 +1,11 @@
 extends ../common/_layout
 
+include ../_mixins
 block title
-    meta(title="illustset")
+    +meta(
+        "一般女性のイラスト｜イラストクリップ",
+        "20~30代の私服の女性のイラストです。ターゲットユーザが若い女性や主婦の場合のLP最適です。"
+    )
 block main
     -
       page = {

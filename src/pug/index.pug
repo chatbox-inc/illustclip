@@ -1,7 +1,12 @@
 extends common/_layout
 
+include _mixins
+
 block title
-    meta(title='home')
+    +meta(
+        "イラストクリップ - ストーリー構成に合わせて使いやすいフリーイラスト素材サイト",
+        "ストーリー構成に合わせて使いやすいフリーイラスト素材サイトです。個人利用・商用利用どちらも無料で仕様できます。"
+    )
 block main
     .container.page-top
         .card-holder
