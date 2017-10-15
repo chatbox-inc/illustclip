@@ -1,21 +1,36 @@
+@import "common/_mixin";
 @import "common/_reset";
 @import "common/_header";
 @import "common/_footer";
 
+ html,body {
+   background: #EA6D53;
+ }
 
 body {
   //background: #F7F5F3;
   min-width: 320px;
   font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
-}
-.content-edge {
   border: solid 10px #EA6D53;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+#contents {
+  @include marginHeader;
+  background: #fff;
 }
 
+
 .container {
-  width: 980px;
+  max-width: 980px;
   height: auto;
   margin: 0 auto;
+  @include mediaSP {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
 }
 a{
   cursor: pointer;
@@ -24,21 +39,6 @@ button{
   cursor: pointer;
 }
 
-@media screen and (max-width: 1080px) {
-  .container{
-    width:710px;
-  }
+img {
+  vertival-align:bottom;
 }
-@media screen and (max-width: 760px) {
-  .container{
-    width:560px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .container{
-    width:100%;
-    padding:15px;
-    box-sizing: border-box;
-  }
-}
-

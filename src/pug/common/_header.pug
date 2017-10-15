@@ -1,22 +1,22 @@
-header
+header#header
+    .header_stripe
     .container
-        a(href='/')
-            .header-logo
+        .header_logo
+            a(href='/')
                 img(src='/img/logo_rectangle.svg')
-        .header-nav
-            a(href='/info').nav-link
-                li
-                    .nav-icon
-                        img(src='/img/icon_clip.svg')
-                    p コンセプト
-            a(href='/info#profile').nav-link
-                li
-                    .nav-icon
-                        img(src='/img/icon_smile.svg')
-                    p 運営について
-            a(href='/info#forms').nav-link
-                li
-                    .nav-icon
-                        img(src='/img/icon_letter.svg')
-                    p リクエスト
-        p.site-description ストーリー構成に合わせて使いやすいフリーイラスト素材サイトです。個人利用・商用利用どちらも無料で仕様できます。
+        nav
+            ul.header_nav
+                li.header_navLink
+                    a(href='/')
+                        .header_navLink--home TOPページ
+                li.header_navLink
+                    a(href='/info')
+                        .header_navLink--concept コンセプト
+                li.header_navLink
+                    a(href='/info')
+                        .header_navLink--creator 運営について
+                li.header_navLink
+                    a(href='/info')
+                        .header_navLink--request リクエスト
+
+        p.header_description ストーリー構成に合わせて使いやすいフリーイラスト素材サイトです。個人利用・商用利用どちらも無料で仕様できます。
