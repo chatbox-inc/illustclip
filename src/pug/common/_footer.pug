@@ -1,23 +1,28 @@
-footer
-    .footer-texture
+footer#footer
+    .footer_texture
     .container
-        .footer-nav
-            li
-                a(href='/info')
-                    .nav-icon
-                        img(src='/img/icon_clip-white.svg')
-                    p コンセプト
-            li
-                a(href='/info#profile')
-                    .nav-icon
-                        img(src='/img/icon_smile-white.svg')
-                    p 運営について
-            li
-                a(href='/info#forms')
-                    .nav-icon
-                        img(src='/img/icon_letter-white.svg')
-                    p リクエスト
-            .copyright
-                span.powered_by Powered by
-                img(src='/img/logo_chatbox.svg')
-                span.right_reserved All rights reserved.
+        .btn_pageTop
+            img(src="/img/icon_circle.svg")
+            img.btn_pageTop_icon(src="/img/icon_arrowUp-white.svg")
+        nav
+            ul.footer_nav
+                li.footer_navLink
+                    a(href='/')
+                        .footer_navLink--home
+                            span TOPページ
+                li.footer_navLink
+                    a(href='/info')
+                        .footer_navLink--concept
+                            span コンセプト
+                li.footer_navLink
+                    a(href='/info')
+                        .footer_navLink--creator
+                            span 運営について
+                li.footer_navLink
+                    a(href='/info')
+                        .footer_navLink--request
+                            span リクエスト
+        .footer_copyright
+            span.powered_by Powered by
+            a(href="https://chatbox-inc.com/" target="_blank"): img(src='/img/logo_chatbox.svg')
+            span.right_reserved All rights reserved.
