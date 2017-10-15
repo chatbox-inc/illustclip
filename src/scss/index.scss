@@ -1,6 +1,8 @@
 @import "_layout.scss";
 
-.page-top{
+#pageTop{
+  background: #F7F5F3;
+  padding: 60px 0 50px;
   @import "./toppage.scss";
 }
 .page-illustset{
