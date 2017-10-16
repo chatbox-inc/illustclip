@@ -14,6 +14,7 @@ body {
   border: solid 10px #EA6D53;
   box-sizing: border-box;
   font-size: 14px;
+  line-height: 1.4;
   color: #7E7E7E;
 }
 #contents {
@@ -41,4 +42,13 @@ button{
 
 img {
   vertival-align:bottom;
+}
+
+.action_backTop {
+  display: block;
+  text-align: center;
+  .btn_backTop {
+    @include btn_backTop;
+  }
+
 }

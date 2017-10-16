@@ -21,7 +21,7 @@ block main
                     p.concept_description
                         | イラストクリップは、イラスト素材を無料で提供するサイトです。
                         br
-                        | ストーリー構成に合わせた表情豊かなイラストをセットで数多く配布しています。
+                        | ストーリー構成に合わせやすい表情豊かなイラストをセットで提供することを心がけています。
                 .concept_images
                     img.illust_clip(src='/img/clip.svg')
                     .circle01s
@@ -104,54 +104,54 @@ block main
                     img.illust_designer03(src='/img/illust/woman_designer03.png')
                     img.illust_guide03(src='/img/illust/woman_guide03.png')
                     .faq_textarea
-                        .faq_question
-                            .baloon-mouth.baloon-mouth01
-                            p.baloon-text Q.イラストを使用したいのですが有料ですか？
-                        .faq_answer
-                            .baloon-mouth.baloon-mouth02
-                            p.baloon-text A.全て無料でお使い頂けます。制限もありません。
-                        .faq_question
-                            .baloon-mouth.baloon-mouth01
-                            p.baloon-text Q.会員登録などは必要ですか？
-                        .faq_answer
-                            .baloon-mouth.baloon-mouth02
-                            p.baloon-text A.登録などは一切必要ありません。好きなイラスト素材をダウンロードするだけで自由に利用できます。
-                        .faq_question
-                            .baloon-mouth.baloon-mouth01
-                            p.baloon-text Q.Webサイトやリーフレット、ブログで使用など商用利用できますか？
-                        .faq_answer
-                            .baloon-mouth.baloon-mouth02
-                            p.baloon-text A.商用可能なフリー素材です。許可、クレジット表記は不要で利用できます。
-                        .faq_question
-                            .baloon-mouth.baloon-mouth01
-                            p.baloon-text Q.イラストのリクエストは可能ですか？
-                        .faq_answer
-                            .baloon-mouth.baloon-mouth02
-                            p.baloon-text A.できるだけ対応しますので、リクエストなどございましたら、受付フォームよりご連絡ください。
+                        .faq_question Q.イラストを使用したいのですが有料ですか？
+                        .faq_answer A.全て無料でお使い頂けます。
+                        .faq_question Q.会員登録などは必要ですか？
+                        .faq_answer  A.登録などは一切必要ありません。好きなイラスト素材をダウンロードするだけで自由に利用できます。
+                        .faq_question Q.Webサイトやリーフレット等、商用利用できますか？
+                        .faq_answer A.商用可能なフリー素材です。使用許諾やクレジット表記は不要です。ただしイラストそのものを素材として再配布、販売する行為は認めていません。
+                        .faq_question Q.イラストのリクエストは可能ですか？
+                        .faq_answer  A.できるだけ対応しますので、リクエストフォームよりご連絡ください。
 
-
-        .profile#profile
+        #sec_creator
             .container
-                h1.title 描いてる人
-                .introduction
-                    img.icon(src='/img/yasui.jpg')
-                    h2.name 安井 利紗
-                    h3.position 株式会社chatbox デザイナー
-                    p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらお仕事のご依頼はchatboxお問い合わせページからどうぞ
-                a.link(href='#') chatboxお問い合わせページへ
+                h1.creator_heading
+                    div
+                        span 描いてる人
+                .creator_profile
+                    .creator_profile_img
+                        img.icon(src='/img/yasui.jpg')
+                    .creator_profile_detail
+                        ul
+                            dt.creator_profile_name 安井 利紗
+                            dd.creator_profile_position 株式会社chatbox デザイナー
+                            dd.creator_profile_description
+                                | 大学時代イラスレ−ション学科を専攻。Web制作会社にてインターン勤務を得て、現在はWebデザイナーとして働いています。
+                                br
+                                br
+                                | 自分の強みを活かしクリエイターとしてもっと色々な方の役に立ちたいと思い、イラスト素材サイトを運営することなりました。
+                                br
+                                | イラストやデザインのお仕事募集中です。
+                                br
+                                | お仕事のご相談はchatboxお問い合わせページからお願いします。
+                a.btn_chatbox(href='https://chatbox-inc.com/contact/' target="") chatboxお問い合わせページへ
                     img.symbol(src='/img/logo_chatbox-symbol.svg')
-        .forms#forms
+
+        #sec_request
             .container
-                h1.title リクエスト受付フォーム
-                p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら
-                .form
-                    .name-form
-                        label.label お名前
-                        input.name(type='text' placeholder='お名前')
-                    .content-form
-                        label.label 内容
-                        textarea.content(placeholder='内容')
-                a.confirm(href='#') 確認画面へ&nbsp;
-                    i.fa.fa-paper-plane-o(aria-hidden='true')
-                a.top(href='/') TOPに戻る&nbsp;
-                    i.fa.fa-home(aria-hidden='true')
+                h1.request_heading
+                    div
+                        span リクエスト受付フォーム
+                p.request_description リクエスト受付中です。イラストのご要望がございましたらフォームよりご連絡ください。
+                .request_form
+                    .request_form_name
+                        input(type='text' placeholder='お名前')
+                    .request_form_textarea
+                        textarea(placeholder='内容')
+                    a.btn_confirm(href='#')
+                        span 確認画面へ
+                        i.fa.fa-paper-plane-o(aria-hidden='true')
+        .action_backTop
+            a.btn_backTop(href='/')
+                span TOPに戻る
+                i.fa.fa-home(aria-hidden='true')
