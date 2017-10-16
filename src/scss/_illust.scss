@@ -1,17 +1,6 @@
 @import "common/mixin";
 
-.site-navi {
-  font-size: 14px;
-  padding: 25px 0px 25px 0px;
-  & .arrow {
-    margin: 0 10px 0 10px;
-    color: #A1A1A1;
-  }
-  & a {
-    text-decoration: none;
-    color: #A1A1A1;
-  }
-}
+@include breadcrumbs;
 
 .thumbnail {
   margin: 0px 100px 30px 0px;

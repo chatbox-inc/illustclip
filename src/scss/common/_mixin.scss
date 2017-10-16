@@ -1,0 +1,89 @@
+@import 'lib/variables';
+
+@mixin mediaSP {
+  @media screen and (max-width:850px) {
+    @content
+  }
+}
+
+@mixin marginHeader {
+  margin-top: 210px;
+  @include mediaSP {
+    margin-top: 160px;
+  }
+}
+
+@mixin breadcrumbs{
+  .site-navi {
+    font-size: 14px;
+    padding: 25px 0px 25px 0px;
+    .arrow {
+      margin: 0 10px 0 10px;
+      color: #A1A1A1;
+    }
+     a {
+      text-decoration: none;
+      color: #A1A1A1;
+       &:hover {
+         color: $clr_orange;
+       }
+    }
+  }
+}
+
+@mixin white-button(){
+  width: 210px;
+  border-radius: 30px;
+  padding: 8px 35px 8px 35px;
+  font-size: 13px;
+  background: #fff;
+  text-decoration: none;
+  border: solid 1px #EA6D53;
+  color: #EA6D53;
+  outline: none;
+  //transition: ease 0.4s;
+  @media screen and(max-width: 500px){
+    width:150px;
+  }
+  //&:hover{
+  //  background:#EA6D53;
+  //  color:#fff;
+  //
+  //}
+}
+@mixin orange-button(){
+  width: 210px;
+  border-radius: 30px;
+  padding: 8px 35px 8px 35px;
+  font-size: 13px;
+  background: #EA6D53;
+  text-decoration: none;
+  border: solid 0px;
+  color: #fff;
+  outline: none;
+  //transition: ease 0.4s;
+  //&:hover{
+  //  background:#fff;
+  //  color:#EA6D53;
+  //  border:solid 1px #EA6D53;
+  //
+  //}
+}
+
+@mixin info_heading($textColor,$bgColor) {
+  margin-bottom: 1rem;
+  div {
+    text-align: center;
+  }
+  span {
+    display: inline-block;
+    margin-bottom: 13px;
+    padding: 12px 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $textColor;
+    text-align: center;
+    background: $bgColor,;
+  }
+}
+

@@ -1,3 +1,5 @@
 .idea
+.DS_Store
 node_modules
-/dist/views/*.html
+/dist/views/**/*.html
+/dist/views/css/maps/**/*.map

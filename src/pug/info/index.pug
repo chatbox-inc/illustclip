@@ -3,127 +3,155 @@ extends ../common/_layout
 block title
     meta(title="information")
 block main
-    .page-info
-        .container
-            p.site-navi
+    #pageInfo
+        .site-navi
+            .container
                 a(href='/') topページ
                 span.arrow >
                 a() インフォメーション
 
-        .information.page-info
-            .concept
-                .background-images
+        #sec_concept
+            .container
+                .concept_textarea
+                    h1.concept_heading
+                        div
+                            span イラストクリップの
+                        div
+                            span コンセプト
+                    p.concept_description
+                        | イラストクリップは、イラスト素材を無料で提供するサイトです。
+                        br
+                        | ストーリー構成に合わせた表情豊かなイラストをセットで数多く配布しています。
+                .concept_images
+                    img.illust_clip(src='/img/clip.svg')
                     .circle01s
                     .circle02s
                     .circle03s
-                    .circle04
                     .circle05
                     .circle06
-                    img.clip(src='/img/clip.svg')
-                    img.guide01(src='/img/illust/woman_guide01.png')
-                .concept-textarea
-                    div
-                        .concept-box イラストクリップの
-                    div
-                        .concept-box コンセプト
-                    .concept-text イラストクリップは・・・・
-                        p ここにコンセプトを書く
-                        p ここにコンセプトを書く
+                    .circle04
+                    img.illust_guide01(src='/img/illust/woman_guide01.png')
 
-            .trouble-point
-                .container
-                    h1.title こんなお悩みはありませんか？
-                    p.ask
-                        span ランディングページの制作時、
-                        span イラスト素材集めで困った経験はありませんか？
-                    .illust-area
-                        .box.box1
-                            h2.box-title ピッタリ合う表情がない・・・
-                            p.box-description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                        .box.box2
-                            h2.box-title 絵柄が違うので統一感がでない
-                            p.box-description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                        img.bad(src='/img/illust/lp-sample_bad.png')
-                        img.good(src='/img/illust/lp-sample_good.png')
-                        img.designer01(src='/img/illust/woman_designer01.png')
-                        img.woman01(src='/img/illust/lp-sample_woman01.png')
-                        img.woman02(src='/img/illust/lp-sample_woman02.png')
-            .solution
-                .container
-                    h1.title.title01 イラストクリップなら
-                    h1.title.title02 表情豊かなイラストがセットで見つかる！
-                    .illust-area
-                        img.designer02(src='/img/illust/woman_designer02.png')
-                        img.illustclip(src='/img/illust/lp-sample_illustclip.png')
-                        img.guide04(src='/img/illust/woman_guide04.png')
-                        p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらユーザーの変化&nbsp;=&nbsp;素材を探す手間を減らして制作時間短縮し制作のストレスを減らす
-                    ul.points
-                        li.point 素材は全て無料！
-                        li.point 商用利用も可能！
-                        li.point クレジット表記不要！
-            .usage
-                .container
-                    h1.title 様々な場面で利用できます！
-                    p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    ul.scenes
-                        li.scene
-                            .scene-img-wrapper
-                                img.scene-img.pc(src='/img/illust/item_pc.png')
-                            .scene-title ランディングページの制作に
-                        li.scene
-                            .scene-img-wrapper
-                                img.scene-img.proposal(src='/img/illust/item_proposal.png')
-                            .scene-title 企画書の制作に
-                        li.scene
-                            .scene-img-wrapper
-                                img.scene-img.slide(src='/img/illust/item_slide.png')
+        #sec_problem
+            .container
+                h1.problem_heading
+                    div
+                        span こんなお悩み、ありませんか？
+                p.problem_intro
+                    | ランディングページの制作時、
+                    br
+                    | イラスト素材集めで困った経験はありませんか？
+                .problem_textarea
+                    .problem_textBox01
+                        h2.problem_textBox_titel ぴったりあう表情ががない
+                        p シーンに合わせていろんな表情パターンがほしい。でも１〜２種類しか見つからない。
+                    .problem_textBox02
+                        h2.problem_textBox_titel 絵柄が違うので統一感がでない
+                        p いろんなサイトからイラストを集めてきたけど、全体のイメージがバラバラに...
+                    img.illust_designer01(src='/img/illust/woman_designer01.png')
+                    img.sample_bad(src='/img/illust/lp-sample_bad.png')
+                    img.sample_good(src='/img/illust/lp-sample_good.png')
+                    img.sample_woman01(src='/img/illust/lp-sample_woman01.png')
+                    img.sample_woman02(src='/img/illust/lp-sample_woman02.png')
+        #sec_solution
+            .container
+                h1.solution_heading
+                    div
+                        span イラストクリップなら
+                    div
+                        span 表情豊かなイラストがセットで見つかる！
+                .solution_illustArea
+                    img.illust_designer02(src='/img/illust/woman_designer02.png')
+                    img.illust_illustSet(src='/img/illust/lp-sample_illustclip.png')
+                    img.illust_guide04(src='/img/illust/woman_guide04.png')
+                    .solution_description
+                        p いろんなパターンのイラストをセットで用意しているので、素材を探すのも簡単！
+                        p 面倒な会員登録はなく、すぐに利用出来るので、制作時間も短縮！
+                ul.solution_point
+                    li 素材は全て無料！
+                    li 商用利用も可能！
+                    li クレジット表記不要！
+        #sec_usage
+            .container
+                h1.usage_heading
+                    div
+                        span 様々な場面で利用できます！
+                .usage_description
+                    p ランディングページはもちろん、企画書やプレゼン資料にも使用できます！
+                    p 企画書やプレゼン資料がうまく作れないという方も、
+                        br
+                        | イラストを追加するだけで簡単に、見やすく、わかりやすい資料が作れます！
+                ul.usage_scenes
+                    li.usage_scene
+                        dl
+                            dd.usage_scenes_img: img(src='/img/illust/item_pc.png')
+                            dt.usage_scenes_heading ランディングページ
+                    li.usage_scene
+                        dl
+                            dd.usage_scenes_img: img(src='/img/illust/item_proposal.png')
+                            dt.usage_scenes_heading 企画書の制作
+                    li.usage_scene
+                        dl
+                            dd.usage_scenes_img: img(src='/img/illust/item_slide.png')
+                            dt.usage_scenes_heading プレゼン資料
 
-            .terms
-                .container
-                    h1.title 利用規約
-                    .baloon.baloon01
-                        .baloon-mouth.baloon-mouth01
-                        p.baloon-text Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    .baloon.baloon02
-                        .baloon-mouth.baloon-mouth02
-                        p.baloon-text A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    .baloon.baloon01
-                        .baloon-mouth.baloon-mouth01
-                        p.baloon-text Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    .baloon.baloon02
-                        .baloon-mouth.baloon-mouth02
-                        p.baloon-text A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    .baloon.baloon01
-                        .baloon-mouth.baloon-mouth01
-                        p.baloon-text Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    .baloon.baloon02
-                        .baloon-mouth.baloon-mouth02
-                        p.baloon-text A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-                    .illust-area
-                        img.designer03(src='/img/illust/woman_designer03.png')
-                        img.guide03(src='/img/illust/woman_guide03.png')
-            .profile#profile
-                .container
-                    h1.title 描いてる人
-                    .introduction
-                        img.icon(src='/img/yasui.jpg')
-                        h2.name 安井 利紗
-                        h3.position 株式会社chatbox デザイナー
-                        p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらお仕事のご依頼はchatboxお問い合わせページからどうぞ
-                    a.link(href='#') chatboxお問い合わせページへ
-                        img.symbol(src='/img/logo_chatbox-symbol.svg')
-            .forms#forms
-                .container
-                    h1.title リクエスト受付フォーム
-                    p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら
-                    .form
-                        .name-form
-                            label.label お名前
-                            input.name(type='text' placeholder='お名前')
-                        .content-form
-                            label.label 内容
-                            textarea.content(placeholder='内容')
-                    a.confirm(href='#') 確認画面へ&nbsp;
-                        i.fa.fa-paper-plane-o(aria-hidden='true')
-                    a.top(href='/') TOPに戻る&nbsp;
-                        i.fa.fa-home(aria-hidden='true')
+        #sec_faq
+            .container
+                h1.faq_heading
+                    div
+                        span 利用規約
+                .faq_illustArea
+                    img.illust_designer03(src='/img/illust/woman_designer03.png')
+                    img.illust_guide03(src='/img/illust/woman_guide03.png')
+                    .faq_textarea
+                        .faq_question
+                            .baloon-mouth.baloon-mouth01
+                            p.baloon-text Q.イラストを使用したいのですが有料ですか？
+                        .faq_answer
+                            .baloon-mouth.baloon-mouth02
+                            p.baloon-text A.全て無料でお使い頂けます。制限もありません。
+                        .faq_question
+                            .baloon-mouth.baloon-mouth01
+                            p.baloon-text Q.会員登録などは必要ですか？
+                        .faq_answer
+                            .baloon-mouth.baloon-mouth02
+                            p.baloon-text A.登録などは一切必要ありません。好きなイラスト素材をダウンロードするだけで自由に利用できます。
+                        .faq_question
+                            .baloon-mouth.baloon-mouth01
+                            p.baloon-text Q.Webサイトやリーフレット、ブログで使用など商用利用できますか？
+                        .faq_answer
+                            .baloon-mouth.baloon-mouth02
+                            p.baloon-text A.商用可能なフリー素材です。許可、クレジット表記は不要で利用できます。
+                        .faq_question
+                            .baloon-mouth.baloon-mouth01
+                            p.baloon-text Q.イラストのリクエストは可能ですか？
+                        .faq_answer
+                            .baloon-mouth.baloon-mouth02
+                            p.baloon-text A.できるだけ対応しますので、リクエストなどございましたら、受付フォームよりご連絡ください。
+
+
+        .profile#profile
+            .container
+                h1.title 描いてる人
+                .introduction
+                    img.icon(src='/img/yasui.jpg')
+                    h2.name 安井 利紗
+                    h3.position 株式会社chatbox デザイナー
+                    p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらお仕事のご依頼はchatboxお問い合わせページからどうぞ
+                a.link(href='#') chatboxお問い合わせページへ
+                    img.symbol(src='/img/logo_chatbox-symbol.svg')
+        .forms#forms
+            .container
+                h1.title リクエスト受付フォーム
+                p.description うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら
+                .form
+                    .name-form
+                        label.label お名前
+                        input.name(type='text' placeholder='お名前')
+                    .content-form
+                        label.label 内容
+                        textarea.content(placeholder='内容')
+                a.confirm(href='#') 確認画面へ&nbsp;
+                    i.fa.fa-paper-plane-o(aria-hidden='true')
+                a.top(href='/') TOPに戻る&nbsp;
+                    i.fa.fa-home(aria-hidden='true')
