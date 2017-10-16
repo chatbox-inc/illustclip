@@ -1,3 +1,5 @@
+@import 'lib/variables';
+
 @mixin mediaSP {
   @media screen and (max-width:850px) {
     @content
@@ -11,7 +13,23 @@
   }
 }
 
-
+@mixin breadcrumbs{
+  .site-navi {
+    font-size: 14px;
+    padding: 25px 0px 25px 0px;
+    .arrow {
+      margin: 0 10px 0 10px;
+      color: #A1A1A1;
+    }
+     a {
+      text-decoration: none;
+      color: #A1A1A1;
+       &:hover {
+         color: $clr_orange;
+       }
+    }
+  }
+}
 
 @mixin white-button(){
   width: 210px;
@@ -52,4 +70,20 @@
   //}
 }
 
+@mixin info_heading($textColor,$bgColor) {
+  margin-bottom: 1rem;
+  div {
+    text-align: center;
+  }
+  span {
+    display: inline-block;
+    margin-bottom: 13px;
+    padding: 12px 20px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $textColor;
+    text-align: center;
+    background: $bgColor,;
+  }
+}
 

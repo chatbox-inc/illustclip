@@ -18,177 +18,206 @@
 
   </head>
   <body>
-    <div class="content-edge">
-      <header>
-        <div class="container"><a href="/">
-            <div class="header-logo"><img src="/img/logo_rectangle.svg"/></div></a>
-          <div class="header-nav"><a class="nav-link" href="/info">
-              <li>
-                <div class="nav-icon"><img src="/img/icon_clip.svg"/></div>
-                <p>コンセプト</p>
-              </li></a><a class="nav-link" href="/info#profile">
-              <li>
-                <div class="nav-icon"><img src="/img/icon_smile.svg"/></div>
-                <p>運営について</p>
-              </li></a><a class="nav-link" href="/info#forms">
-              <li>
-                <div class="nav-icon"><img src="/img/icon_letter.svg"/></div>
-                <p>リクエスト</p>
-              </li></a></div>
-          <p class="site-description">ストーリー構成に合わせて使いやすいフリーイラスト素材サイトです。個人利用・商用利用どちらも無料で仕様できます。</p>
+    <header id="header">
+      <div class="header_stripe"></div>
+      <div class="container">
+        <div class="header_logo"><a href="/"><img src="/img/logo_rectangle.svg"/></a></div>
+        <nav>
+          <ul class="header_nav">
+            <li class="header_navLink"><a href="/">
+                <div class="header_navLink--home">TOPページ</div></a></li>
+            <li class="header_navLink"><a href="/info">
+                <div class="header_navLink--concept">コンセプト</div></a></li>
+            <li class="header_navLink"><a href="/info">
+                <div class="header_navLink--creator">運営について</div></a></li>
+            <li class="header_navLink"><a href="/info">
+                <div class="header_navLink--request">リクエスト</div></a></li>
+          </ul>
+        </nav>
+        <p class="header_description">ストーリー構成に合わせて使いやすいフリーイラスト素材サイトです。個人利用・商用利用どちらも無料で仕様できます。</p>
+      </div>
+    </header>
+    <div id="contents">
+      <div id="pageInfo">
+        <div class="site-navi">
+          <div class="container"><a href="/">topページ</a><span class="arrow">></span><a>インフォメーション</a></div>
         </div>
-      </header>
-      <div class="page-info">
-        <div class="container">
-          <p class="site-navi"><a href="/">topページ</a><span class="arrow">></span><a>インフォメーション</a></p>
-        </div>
-        <div class="information page-info">
-          <div class="concept">
-            <div class="background-images">
+        <div id="sec_concept">
+          <div class="container">
+            <div class="concept_textarea">
+              <h1 class="concept_heading">
+                <div><span>イラストクリップの</span></div>
+                <div><span>コンセプト</span></div>
+              </h1>
+              <p class="concept_description">イラストクリップは、イラスト素材を無料で提供するサイトです。<br/>ストーリー構成に合わせた表情豊かなイラストをセットで数多く配布しています。</p>
+            </div>
+            <div class="concept_images"><img class="illust_clip" src="/img/clip.svg"/>
               <div class="circle01s"></div>
               <div class="circle02s"></div>
               <div class="circle03s"></div>
-              <div class="circle04"></div>
               <div class="circle05"></div>
-              <div class="circle06"></div><img class="clip" src="/img/clip.svg"/><img class="guide01" src="/img/illust/woman_guide01.png"/>
-            </div>
-            <div class="concept-textarea">
-              <div>
-                <div class="concept-box">イラストクリップの</div>
-              </div>
-              <div>
-                <div class="concept-box">コンセプト</div>
-              </div>
-              <div class="concept-text">イラストクリップは・・・・
-                <p>ここにコンセプトを書く</p>
-                <p>ここにコンセプトを書く</p>
-              </div>
+              <div class="circle06"></div>
+              <div class="circle04"></div><img class="illust_guide01" src="/img/illust/woman_guide01.png"/>
             </div>
           </div>
-          <div class="trouble-point">
-            <div class="container">
-              <h1 class="title">こんなお悩みはありませんか？</h1>
-              <p class="ask"><span>ランディングページの制作時、</span><span>イラスト素材集めで困った経験はありませんか？</span></p>
-              <div class="illust-area">
-                <div class="box box1">
-                  <h2 class="box-title">ピッタリ合う表情がない・・・</h2>
-                  <p class="box-description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
+        </div>
+        <div id="sec_problem">
+          <div class="container">
+            <h1 class="problem_heading">
+              <div><span>こんなお悩み、ありませんか？</span></div>
+            </h1>
+            <p class="problem_intro">ランディングページの制作時、<br/>イラスト素材集めで困った経験はありませんか？</p>
+            <div class="problem_textarea">
+              <div class="problem_textBox01">
+                <h2 class="problem_textBox_titel">ぴったりあう表情ががない</h2>
+                <p>シーンに合わせていろんな表情パターンがほしい。でも１〜２種類しか見つからない。</p>
+              </div>
+              <div class="problem_textBox02">
+                <h2 class="problem_textBox_titel">絵柄が違うので統一感がでない</h2>
+                <p>いろんなサイトからイラストを集めてきたけど、全体のイメージがバラバラに...</p>
+              </div><img class="illust_designer01" src="/img/illust/woman_designer01.png"/><img class="sample_bad" src="/img/illust/lp-sample_bad.png"/><img class="sample_good" src="/img/illust/lp-sample_good.png"/><img class="sample_woman01" src="/img/illust/lp-sample_woman01.png"/><img class="sample_woman02" src="/img/illust/lp-sample_woman02.png"/>
+            </div>
+          </div>
+        </div>
+        <div id="sec_solution">
+          <div class="container">
+            <h1 class="solution_heading">
+              <div><span>イラストクリップなら</span></div>
+              <div><span>表情豊かなイラストがセットで見つかる！</span></div>
+            </h1>
+            <div class="solution_illustArea"><img class="illust_designer02" src="/img/illust/woman_designer02.png"/><img class="illust_illustSet" src="/img/illust/lp-sample_illustclip.png"/><img class="illust_guide04" src="/img/illust/woman_guide04.png"/>
+              <div class="solution_description">
+                <p>いろんなパターンのイラストをセットで用意しているので、素材を探すのも簡単！</p>
+                <p>面倒な会員登録はなく、すぐに利用出来るので、制作時間も短縮！</p>
+              </div>
+            </div>
+            <ul class="solution_point">
+              <li>素材は全て無料！</li>
+              <li>商用利用も可能！</li>
+              <li>クレジット表記不要！</li>
+            </ul>
+          </div>
+        </div>
+        <div id="sec_usage">
+          <div class="container">
+            <h1 class="usage_heading">
+              <div><span>様々な場面で利用できます！</span></div>
+            </h1>
+            <div class="usage_description">
+              <p>ランディングページはもちろん、企画書やプレゼン資料にも使用できます！</p>
+              <p>企画書やプレゼン資料がうまく作れないという方も、<br/>イラストを追加するだけで簡単に、見やすく、わかりやすい資料が作れます！</p>
+            </div>
+            <ul class="usage_scenes">
+              <li class="usage_scene">
+                <dl>
+                  <dd class="usage_scenes_img"><img src="/img/illust/item_pc.png"/></dd>
+                  <dt class="usage_scenes_heading">ランディングページ</dt>
+                </dl>
+              </li>
+              <li class="usage_scene">
+                <dl>
+                  <dd class="usage_scenes_img"><img src="/img/illust/item_proposal.png"/></dd>
+                  <dt class="usage_scenes_heading">企画書の制作</dt>
+                </dl>
+              </li>
+              <li class="usage_scene">
+                <dl>
+                  <dd class="usage_scenes_img"><img src="/img/illust/item_slide.png"/></dd>
+                  <dt class="usage_scenes_heading">プレゼン資料</dt>
+                </dl>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="sec_faq">
+          <div class="container">
+            <h1 class="faq_heading">
+              <div><span>利用規約</span></div>
+            </h1>
+            <div class="faq_illustArea"><img class="illust_designer03" src="/img/illust/woman_designer03.png"/><img class="illust_guide03" src="/img/illust/woman_guide03.png"/>
+              <div class="faq_textarea">
+                <div class="faq_question">
+                  <div class="baloon-mouth baloon-mouth01"></div>
+                  <p class="baloon-text">Q.イラストを使用したいのですが有料ですか？</p>
                 </div>
-                <div class="box box2">
-                  <h2 class="box-title">絵柄が違うので統一感がでない</h2>
-                  <p class="box-description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-                </div><img class="bad" src="/img/illust/lp-sample_bad.png"/><img class="good" src="/img/illust/lp-sample_good.png"/><img class="designer01" src="/img/illust/woman_designer01.png"/><img class="woman01" src="/img/illust/lp-sample_woman01.png"/><img class="woman02" src="/img/illust/lp-sample_woman02.png"/>
-              </div>
-            </div>
-          </div>
-          <div class="solution">
-            <div class="container">
-              <h1 class="title title01">イラストクリップなら</h1>
-              <h1 class="title title02">表情豊かなイラストがセットで見つかる！</h1>
-              <div class="illust-area"><img class="designer02" src="/img/illust/woman_designer02.png"/><img class="illustclip" src="/img/illust/lp-sample_illustclip.png"/><img class="guide04" src="/img/illust/woman_guide04.png"/>
-                <p class="description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらユーザーの変化&nbsp;=&nbsp;素材を探す手間を減らして制作時間短縮し制作のストレスを減らす</p>
-              </div>
-              <ul class="points">
-                <li class="point">素材は全て無料！</li>
-                <li class="point">商用利用も可能！</li>
-                <li class="point">クレジット表記不要！</li>
-              </ul>
-            </div>
-          </div>
-          <div class="usage">
-            <div class="container">
-              <h1 class="title">様々な場面で利用できます！</h1>
-              <p class="description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              <ul class="scenes">
-                <li class="scene">
-                  <div class="scene-img-wrapper"><img class="scene-img pc" src="/img/illust/item_pc.png"/></div>
-                  <div class="scene-title">ランディングページの制作に</div>
-                </li>
-                <li class="scene">
-                  <div class="scene-img-wrapper"><img class="scene-img proposal" src="/img/illust/item_proposal.png"/></div>
-                  <div class="scene-title">企画書の制作に</div>
-                </li>
-                <li class="scene">
-                  <div class="scene-img-wrapper"><img class="scene-img slide" src="/img/illust/item_slide.png"/></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="terms">
-            <div class="container">
-              <h1 class="title">利用規約</h1>
-              <div class="baloon baloon01">
-                <div class="baloon-mouth baloon-mouth01"></div>
-                <p class="baloon-text">Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              </div>
-              <div class="baloon baloon02">
-                <div class="baloon-mouth baloon-mouth02"></div>
-                <p class="baloon-text">A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              </div>
-              <div class="baloon baloon01">
-                <div class="baloon-mouth baloon-mouth01"></div>
-                <p class="baloon-text">Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              </div>
-              <div class="baloon baloon02">
-                <div class="baloon-mouth baloon-mouth02"></div>
-                <p class="baloon-text">A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              </div>
-              <div class="baloon baloon01">
-                <div class="baloon-mouth baloon-mouth01"></div>
-                <p class="baloon-text">Q. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              </div>
-              <div class="baloon baloon02">
-                <div class="baloon-mouth baloon-mouth02"></div>
-                <p class="baloon-text">A. うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら</p>
-              </div>
-              <div class="illust-area"><img class="designer03" src="/img/illust/woman_designer03.png"/><img class="guide03" src="/img/illust/woman_guide03.png"/></div>
-            </div>
-          </div>
-          <div class="profile" id="profile">
-            <div class="container">
-              <h1 class="title">描いてる人</h1>
-              <div class="introduction"><img class="icon" src="/img/yasui.jpg"/>
-                <h2 class="name">安井 利紗</h2>
-                <h3 class="position">株式会社chatbox デザイナー</h3>
-                <p class="description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらお仕事のご依頼はchatboxお問い合わせページからどうぞ</p>
-              </div><a class="link" href="#">chatboxお問い合わせページへ<img class="symbol" src="/img/logo_chatbox-symbol.svg"/></a>
-            </div>
-          </div>
-          <div class="forms" id="forms">
-            <div class="container">
-              <h1 class="title">リクエスト受付フォーム</h1>
-              <p class="description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら</p>
-              <div class="form">
-                <div class="name-form">
-                  <label class="label">お名前</label>
-                  <input class="name" type="text" placeholder="お名前"/>
+                <div class="faq_answer">
+                  <div class="baloon-mouth baloon-mouth02"></div>
+                  <p class="baloon-text">A.全て無料でお使い頂けます。制限もありません。</p>
                 </div>
-                <div class="content-form">
-                  <label class="label">内容</label>
-                  <textarea class="content" placeholder="内容"></textarea>
+                <div class="faq_question">
+                  <div class="baloon-mouth baloon-mouth01"></div>
+                  <p class="baloon-text">Q.会員登録などは必要ですか？</p>
                 </div>
-              </div><a class="confirm" href="#">確認画面へ&nbsp;<i class="fa fa-paper-plane-o" aria-hidden="true"></i></a><a class="top" href="/">TOPに戻る&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
+                <div class="faq_answer">
+                  <div class="baloon-mouth baloon-mouth02"></div>
+                  <p class="baloon-text">A.登録などは一切必要ありません。好きなイラスト素材をダウンロードするだけで自由に利用できます。</p>
+                </div>
+                <div class="faq_question">
+                  <div class="baloon-mouth baloon-mouth01"></div>
+                  <p class="baloon-text">Q.Webサイトやリーフレット、ブログで使用など商用利用できますか？</p>
+                </div>
+                <div class="faq_answer">
+                  <div class="baloon-mouth baloon-mouth02"></div>
+                  <p class="baloon-text">A.商用可能なフリー素材です。許可、クレジット表記は不要で利用できます。</p>
+                </div>
+                <div class="faq_question">
+                  <div class="baloon-mouth baloon-mouth01"></div>
+                  <p class="baloon-text">Q.イラストのリクエストは可能ですか？</p>
+                </div>
+                <div class="faq_answer">
+                  <div class="baloon-mouth baloon-mouth02"></div>
+                  <p class="baloon-text">A.できるだけ対応しますので、リクエストなどございましたら、受付フォームよりご連絡ください。</p>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="profile" id="profile">
+          <div class="container">
+            <h1 class="title">描いてる人</h1>
+            <div class="introduction"><img class="icon" src="/img/yasui.jpg"/>
+              <h2 class="name">安井 利紗</h2>
+              <h3 class="position">株式会社chatbox デザイナー</h3>
+              <p class="description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらお仕事のご依頼はchatboxお問い合わせページからどうぞ</p>
+            </div><a class="link" href="#">chatboxお問い合わせページへ<img class="symbol" src="/img/logo_chatbox-symbol.svg"/></a>
+          </div>
+        </div>
+        <div class="forms" id="forms">
+          <div class="container">
+            <h1 class="title">リクエスト受付フォーム</h1>
+            <p class="description">うんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたら</p>
+            <div class="form">
+              <div class="name-form">
+                <label class="label">お名前</label>
+                <input class="name" type="text" placeholder="お名前"/>
+              </div>
+              <div class="content-form">
+                <label class="label">内容</label>
+                <textarea class="content" placeholder="内容"></textarea>
+              </div>
+            </div><a class="confirm" href="#">確認画面へ&nbsp;<i class="fa fa-paper-plane-o" aria-hidden="true"></i></a><a class="top" href="/">TOPに戻る&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
-      <footer>
-        <div class="footer-texture"></div>
-        <div class="container">
-          <div class="footer-nav">
-            <li><a href="/info">
-                <div class="nav-icon"><img src="/img/icon_clip-white.svg"/></div>
-                <p>コンセプト</p></a></li>
-            <li><a href="/info#profile">
-                <div class="nav-icon"><img src="/img/icon_smile-white.svg"/></div>
-                <p>運営について</p></a></li>
-            <li><a href="/info#forms">
-                <div class="nav-icon"><img src="/img/icon_letter-white.svg"/></div>
-                <p>リクエスト</p></a></li>
-            <div class="copyright"><span class="powered_by">Powered by</span><img src="/img/logo_chatbox.svg"/><span class="right_reserved">All rights reserved.</span></div>
-          </div>
-        </div>
-      </footer>
     </div>
+    <footer id="footer">
+      <div class="footer_texture"></div>
+      <div class="container">
+        <div class="btn_pageTop"><img src="/img/icon_circle.svg"/><img class="btn_pageTop_icon" src="/img/icon_arrowUp-white.svg"/></div>
+        <nav>
+          <ul class="footer_nav">
+            <li class="footer_navLink"><a href="/">
+                <div class="footer_navLink--home"><span>TOPページ</span></div></a></li>
+            <li class="footer_navLink"><a href="/info">
+                <div class="footer_navLink--concept"><span>コンセプト</span></div></a></li>
+            <li class="footer_navLink"><a href="/info">
+                <div class="footer_navLink--creator"><span>運営について</span></div></a></li>
+            <li class="footer_navLink"><a href="/info">
+                <div class="footer_navLink--request"><span>リクエスト</span></div></a></li>
+          </ul>
+        </nav>
+        <div class="footer_copyright"><span class="powered_by">Powered by</span><a href="https://chatbox-inc.com/" target="_blank"><img src="/img/logo_chatbox.svg"/></a><span class="right_reserved">All rights reserved.</span></div>
+      </div>
+    </footer>
   </body>
 </html>

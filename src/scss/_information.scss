@@ -1,358 +1,417 @@
 @import 'common/mixin';
 @import 'lib/variables';
 
-@media screen and(max-width: 2000px) {
-  .container {
-    max-width: 980px;
-    margin: 0 auto;
-  }
+@include breadcrumbs;
 
-  .site-navi {
-    text-align: left;
-  }
+#sec_concept {
+  text-align: center;
+  position: relative;
+  height: 560px;
 
-  .concept {
-    .background-images {
-      margin: 20px auto;
-      width: 500px;
-      height: 10px;
-      position: relative;
-      z-index: -1000;
-      .circle06 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 500px;
-        height: 500px;
-        border-radius: 100%;
-        background: $clr_orange;
-      }
-      .circle01s {
-        position: absolute;
-        top: 25px;
-        left: -60px;
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-        background-size: 8px 8px;
-        transform: rotate(10deg);
-      }
-      .circle02s {
-        position: absolute;
-        top: 150px;
-        right: -140px;
-        width: 70px;
-        height: 70px;
-        border-radius: 100%;
-        background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
-        background-size: 8px 8px;
-        transform: rotate(10deg);
-      }
-      .circle03s {
-        position: absolute;
-        top: 430px;
-        right: -20px;
-        width: 45px;
-        height: 45px;
-        border-radius: 100%;
-        background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-        background-size: 8px 8px;
-        transform: rotate(10deg);
-      }
-      .circle04 {
-        position: absolute;
-        top: 30px;
-        left: 50px;
-        width: 470px;
-        height: 470px;
-        border-radius: 100%;
-        background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
-        background-size: 8px 8px;
-        transform: rotate(10deg);
-        z-index: 1;
-      }
-      .circle05 {
-        position: absolute;
-        top: 30px;
-        left: -25px;
-        width: 470px;
-        height: 470px;
-        border-radius: 100%;
-        background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-        background-size: 8px 8px;
-        transform: rotate(10deg);
-        z-index: -1;
-      }
-      .clip {
-        position: absolute;
-        width: 160px;
-        top: -30px;
-        right: -50px;
-      }
-      .guide01 {
-        position: absolute;
-        width: 200px;
-        top: 100px;
-        left: -130px;
-        z-index: 1000;
-      }
+  .concept_textarea {
+    display: inline-block;
+    margin-top: 110px;
+    max-width: 300px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 10;
+
+    .concept_heading {
+      @include info_heading($clr_orange,#fff)
     }
-    .concept-textarea {
-      width: 100%;
-      padding: 40px 0;
-      margin-bottom: 190px;
-      text-align: center;
-      .concept-box {
-        display: inline-block;
-        padding: 12px 20px;
-        background: white;
-        color: $clr_orange;
-        font-size: 1.6rem;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 13px;
-      }
-      .concept-text {
-        padding: 15px 0;
-        color: white;
-        font-weight: 500;
-        font-size: 1.1rem;
-        line-height: 2;
-      }
+
+    .concept_description {
+      color: white;
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 2;
     }
   }
+  .concept_images {
+    display: inline-block;
+    width: 750px;
+    max-width: 750px;
+    height: 100%;
+    position: relative;
 
-  .trouble-point {
-    height: 600px;
-    background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
-    background-size: 8px 8px;
-    padding-top: 50px;
-    .title {
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 500px;
-      height: 60px;
-      border-radius: 2px;
-      background: $clr_blue;
-      line-height: 60px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: bold;
-      color: $clr_white;
+    .illust_clip {
+      position: absolute;
+      width: 160px;
+      top: -30px;
+      right: 70px;
     }
-    .ask {
-      color: $clr_gray;
-      text-align: center;
-      font-weight: bold;
-    }
-    .illust-area {
-      margin: 0;
-      padding: 0;
-      height: 500px;
-      position: relative;
-      .box {
-        position: absolute;
-        width: 400px;
-        height: 150px;
-        border-radius: 150px;
-        background: $clr_white;
-        padding: 20px;
-      }
-      .box-title {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: bold;
-        color: $clr_blue;
-      }
-
-      .box-description {
-        margin: 0 40px;
-        line-height: 25px;
-        color: $clr_gray;
-      }
-      .box1 {
-        top: 50px;
-        left: -140px;
-      }
-      .box2 {
-        top: 210px;
-        left: 410px;
-      }
-      .bad {
-        position: absolute;
-        width: 100px;
-        top: 220px;
-        left: -20px;
-      }
-      .good {
-        position: absolute;
-        width: 90px;
-        top: 240px;
-        left: 90px;
-      }
-      .designer01 {
-        position: absolute;
-        width: 200px;
-        top: 50px;
-        left: 260px;
-      }
-      .woman01 {
-        position: absolute;
-        width: 100px;
-        top: 130px;
-        left: 510px;
-      }
-      .woman02 {
-        position: absolute;
-        width: 100px;
-        top: 80px;
-        left: 630px;
-      }
-    }
-  }
-
-  .solution {
-    padding-top: 50px;
-    height: 800px;
-    .title {
-      height: 50px;
-      margin: 0 auto;
-      border-radius: 2px;
-      line-height: 50px;
-      background: $clr_light-yellow;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: $clr_orange;
-    }
-    .title01 {
-      width: 300px;
-    }
-    .title02 {
-      margin-top: 10px;
-      width: 500px;
-    }
-    .illust-area {
-      position: relative;
-      height: 70%;
-      .designer02 {
-        position: absolute;
-        width: 200px;
-        top: 250px;
-        left: -110px;
-        transform: rotate(-10deg);
-      }
-      .illustclip {
-        position: absolute;
-        width: 600px;
-        top: 50px;
-        left: 40px;
-      }
-      .guide04 {
-        position: absolute;
-        width: 200px;
-        top: 250px;
-        left: 630px;
-        transform: rotate(10deg);
-      }
-      .description {
-        position: absolute;
-        width: 500px;
-        top: 420px;
-        left: 120px;
-        line-height: 30px;
-        text-align: center;
-        color: $clr_gray;
-      }
-    }
-    .points {
-      text-align: center;
-      .point {
-        display: inline-block;
-        width: 170px;
-        height: 30px;
-        border-radius: 45px;
-        padding-top: 15px;
-        background: $clr_orange;
-        color: $clr_white;
-      }
-      .point:not(last-child) {
-        margin-right: 30px;
-      }
-    }
-  }
-
-  .usage {
-    height: 530px;
-    background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-    background-size: 8px 8px;
-    padding-top: 50px;
-    .title {
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 350px;
-      height: 40px;
-      border-radius: 2px;
-      line-height: 40px;
-      background: $clr_smoke-orange;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: $clr_white;
-    }
-    .description {
-      margin: 0 auto;
-      margin-bottom: 20px;
-      width: 600px;
-      line-height: 30px;
-      text-align: center;
-      color: $clr_gray;
-    }
-    .scenes {
-      display: flex;
-      margin: 0 auto;
-      justify-content: center;
-    }
-    .scene {
-      margin: 20px;
-    }
-    .scene-img-wrapper {
-      position: relative;
-      margin-left: 10px;
-      margin-bottom: 20px;
-      width: 200px;
-      height: 200px;
-      background: $clr_white;
-      border-radius: 50%;
-      .scene-img {
-        position: absolute;
-        margin: 0 auto;
-        width: 120px;
-      }
-      .pc {
-        top: 20%;
-        left: 20%;
-      }
-      .proposal {
-        top: 30%;
-        left: 20%;
-      }
-      .slide {
-        top: 25%;
-        left: 20%;
-      }
-    }
-    .scene-title {
-      margin-bottom: 20px;
+    .illust_guide01 {
+      position: absolute;
       width: 220px;
-      text-align: center;
-      font-weight: bold;
-      color: $clr_gray;
+      top: 100px;
+      left: 0;
+    }
+
+    .circle01s {
+      position: absolute;
+      top: 25px;
+      left: 40px;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
+      background-size: 8px 8px;
+      transform: rotate(10deg);
+    }
+    .circle02s {
+      position: absolute;
+      top: 150px;
+      right: 0;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
+      background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
+      background-size: 8px 8px;
+      transform: rotate(10deg);
+    }
+    .circle03s {
+      position: absolute;
+      top: 430px;
+      right: 90px;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
+      background-size: 8px 8px;
+      transform: rotate(10deg);
+    }
+    .circle04 {
+      position: absolute;
+      top: 30px;
+      width: 470px;
+      height: 470px;
+      border-radius: 100%;
+      background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
+      background-size: 8px 8px;
+      right: 100px;
+    }
+    .circle05 {
+      width: 470px;
+      height: 470px;
+      border-radius: 100%;
+      background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
+      background-size: 8px 8px;
+      transform: rotate(10deg);
+      position: absolute;
+      top: 10px;
+      left: 80px;
+    }
+    .circle06 {
+      width: 500px;
+      height: 500px;
+      border-radius: 100%;
+      background: $clr_orange;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,0);
     }
   }
+}
+
+#sec_problem {
+  text-align: center;
+  height: 600px;
+  background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
+  background-size: 8px 8px;
+  padding-top: 50px;
+
+  .problem_heading {
+    @include info_heading(#fff,$clr_blue)
+  }
+
+  .problem_intro {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  .problem_textarea {
+    display: inline-block;
+    width: 850px;
+    max-width: 850px;
+    height: 315px;
+    position: relative;
+  }
+  .problem_textBox01,.problem_textBox02 {
+    background: #fff;
+    border-radius: 99999px;
+    max-width: 270px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 40px;
+
+  }
+  .problem_textBox01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .problem_textBox02 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .problem_textBox_titel {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #29afdd;
+  }
+  .illust_designer01 {
+    width: 180px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  .sample_bad {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    bottom: 70px;
+    left: 90px;
+  }
+  .sample_good {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    bottom: 25px;
+    left: 170px;
+  }
+  .sample_woman01 {
+    width: 75px;
+    height: auto;
+    position: absolute;
+    top: 70px;
+    right: 175px;
+  }
+  .sample_woman02 {
+    width: 75px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    right: 95px;
+  }
+
+
+}
+
+#sec_solution {
+  padding-top: 50px;
+  height: 750px;
+  text-align: center;
+  .solution_heading {
+    @include info_heading($clr_orange,$clr_light-yellow)
+  }
+  .solution_illustArea {
+    display: inline-block;
+    width: 800px;
+    height: 500px;
+    position: relative;
+  }
+  .illust_designer02 {
+    width: 180px;
+    height: auto;
+    top: 250px;
+    position: absolute;
+    left: 0;
+    transform: rotate(-15deg);
+  }
+  .illust_illustSet {
+    position: absolute;
+    width: 580px;
+    top: 0;
+    left: 48%;
+    transform: translate(-50%,0);
+  }
+  .illust_guide04 {
+    position: absolute;
+    width: 180px;
+    top: 270px;
+    right: 0;
+    transform: rotate(15deg);
+  }
+  .solution_description {
+    display: inline-block;
+    margin-bottom: 20px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .solution_point {
+    li {
+      display: inline-block;
+      margin-right: 5px;
+      width: 170px;
+      height: 30px;
+      border-radius: 99999px;
+      font-weight: bold;
+      padding-top: 15px;
+      background: $clr_orange;
+      color: $clr_white;
+    }
+    li:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+#sec_usage {
+  padding-top: 50px;
+  height: 530px;
+  background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
+  background-size: 8px 8px;
+  text-align: center;
+
+  .usage_heading {
+    @include info_heading(#fff,$clr_orange)
+  }
+
+  .usage_description {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  .usage_scenes {
+    text-align: center;
+
+    .usage_scene {
+      display: inline-block;
+      margin: 0 10px;
+
+    }
+    .usage_scenes_img {
+      margin-bottom: 20px;
+      vertical-align: top;
+      width: 200px ;
+      height: 200px;
+      border-radius: 50%;
+      background: #fff;
+      position: relative;
+      img {
+        display: inline-block;
+        width: 100px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+    }
+
+    .usage_scenes_heading {
+      font-weight: bold;
+      font-size: 1.1rem;
+
+    }
+  }
+
+
+}
+
+#sec_faq {
+  padding-top: 50px;
+  text-align: center;
+  .faq_heading {
+    @include info_heading($clr_gray,#fff);
+  }
+  .faq_illustArea {
+    display: inline-block;
+    width: 800px;
+    text-align: center;
+    position: relative;
+    .illust_designer03 {
+      display: inline-block;
+      width: 130px;
+      height: auto;
+      position: absolute;
+      left: 0;
+    }
+    .illust_guide03 {
+      display: inline-block;
+      width: 130px;
+      height: auto;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+  }
+  .faq_area {
+    max-width: 600px;
+  }
+  .faq_question {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 450px;
+    min-height: 60px;
+
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    text-align: left;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -30px;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-right: 15px solid #fff;
+    }
+  }
+  .faq_answer {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 450px;
+    min-height: 60px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: $clr_light-yellow;
+    position: relative;
+    text-align: left;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -30px;
+      margin-top: -15px;
+      border: 15px solid transparent;
+      border-left: 15px solid $clr_light-yellow;
+    }
+  }
+
+
+
+}
+@media screen and(max-width: 2000px) {
+
   .terms {
     height: 900px;
     padding-top: 50px;
@@ -660,13 +719,13 @@
       transform: rotate(10deg);
       z-index: -1;
     }
-    .clip {
+    .illust_clip {
       position: absolute;
       width: 160px;
       top: -30px;
       right: -50px;
     }
-    .guide01 {
+    .illust_guide01 {
       position: absolute;
       width: 200px;
       top: 100px;
