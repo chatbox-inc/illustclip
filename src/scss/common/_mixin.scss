@@ -72,6 +72,11 @@
 
 @mixin info_heading($textColor,$bgColor) {
   margin-bottom: 1rem;
+
+  @include mediaSP {
+    margin-bottom: .5rem;
+  }
+
   div {
     text-align: center;
   }
@@ -84,6 +89,9 @@
     color: $textColor;
     text-align: center;
     background: $bgColor,;
+    @include mediaSP {
+      font-size: 1rem;
+    }
   }
 }
 

@@ -774,6 +774,9 @@ img {
     text-align: center;
     position: relative;
     height: 560px; }
+    @media screen and (max-width: 850px) {
+      #pageInfo #sec_concept {
+        height: 120vw; } }
     #pageInfo #sec_concept .concept_textarea {
       display: inline-block;
       margin-top: 110px;
@@ -783,8 +786,17 @@ img {
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 10; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_concept .concept_textarea {
+          width: 100%;
+          max-width: 250px;
+          margin-top: 2rem;
+          top: 0; } }
       #pageInfo #sec_concept .concept_textarea .concept_heading {
         margin-bottom: 1rem; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_textarea .concept_heading {
+            margin-bottom: .5rem; } }
         #pageInfo #sec_concept .concept_textarea .concept_heading div {
           text-align: center; }
         #pageInfo #sec_concept .concept_textarea .concept_heading span {
@@ -796,27 +808,49 @@ img {
           color: #EC6C4D;
           text-align: center;
           background: #fff; }
+          @media screen and (max-width: 850px) {
+            #pageInfo #sec_concept .concept_textarea .concept_heading span {
+              font-size: 1rem; } }
       #pageInfo #sec_concept .concept_textarea .concept_description {
         color: white;
         font-weight: 500;
         font-size: 1.1rem;
         line-height: 2; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_textarea .concept_description {
+            font-size: .9rem; } }
     #pageInfo #sec_concept .concept_images {
       display: inline-block;
       width: 750px;
       max-width: 750px;
       height: 100%;
       position: relative; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_concept .concept_images {
+          width: 100%;
+          max-width: 100%;
+          overflow: hidden; } }
       #pageInfo #sec_concept .concept_images .illust_clip {
         position: absolute;
         width: 160px;
         top: -30px;
         right: 70px; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .illust_clip {
+            width: 20%;
+            min-width: 80px;
+            top: 0;
+            right: 0; } }
       #pageInfo #sec_concept .concept_images .illust_guide01 {
         position: absolute;
         width: 220px;
         top: 100px;
         left: 0; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .illust_guide01 {
+            width: 120px;
+            bottom: 0;
+            top: auto; } }
       #pageInfo #sec_concept .concept_images .circle01s {
         position: absolute;
         top: 25px;
@@ -827,6 +861,9 @@ img {
         background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
         background-size: 8px 8px;
         transform: rotate(10deg); }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .circle01s {
+            display: none; } }
       #pageInfo #sec_concept .concept_images .circle02s {
         position: absolute;
         top: 150px;
@@ -837,6 +874,9 @@ img {
         background-image: linear-gradient(-45deg, transparent 25%, #ED8566 25%, #ED8566 50%, transparent 50%, transparent 75%, #ED8566 75%, #ED8566);
         background-size: 8px 8px;
         transform: rotate(10deg); }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .circle02s {
+            display: none; } }
       #pageInfo #sec_concept .concept_images .circle03s {
         position: absolute;
         top: 430px;
@@ -847,6 +887,9 @@ img {
         background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
         background-size: 8px 8px;
         transform: rotate(10deg); }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .circle03s {
+            display: none; } }
       #pageInfo #sec_concept .concept_images .circle04 {
         position: absolute;
         top: 30px;
@@ -856,25 +899,48 @@ img {
         background-image: linear-gradient(-45deg, transparent 25%, #ED8566 25%, #ED8566 50%, transparent 50%, transparent 75%, #ED8566 75%, #ED8566);
         background-size: 8px 8px;
         right: 100px; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .circle04 {
+            width: 100%;
+            height: auto;
+            padding: 50%;
+            box-sizing: border-box;
+            right: -30px;
+            top: 40px; } }
       #pageInfo #sec_concept .concept_images .circle05 {
         width: 470px;
         height: 470px;
-        border-radius: 100%;
+        border-radius: 50%;
         background-image: linear-gradient(-45deg, transparent 25%, #FCE277 25%, #FCE277 50%, transparent 50%, transparent 75%, #FCE277 75%, #FCE277);
         background-size: 8px 8px;
         transform: rotate(10deg);
         position: absolute;
         top: 10px;
         left: 80px; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .circle05 {
+            width: 100%;
+            height: auto;
+            padding: 50%;
+            box-sizing: border-box;
+            top: 30px;
+            left: -30px; } }
       #pageInfo #sec_concept .concept_images .circle06 {
         width: 500px;
         height: 500px;
-        border-radius: 100%;
+        border-radius: 50%;
         background: #EC6C4D;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translate(-50%, 0); }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_concept .concept_images .circle06 {
+            width: 100%;
+            height: auto;
+            padding: 50%;
+            box-sizing: border-box;
+            top: 10px; } }
   #pageInfo #sec_problem {
     text-align: center;
     height: 600px;
@@ -883,6 +949,9 @@ img {
     padding-top: 50px; }
     #pageInfo #sec_problem .problem_heading {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_heading {
+          margin-bottom: .5rem; } }
       #pageInfo #sec_problem .problem_heading div {
         text-align: center; }
       #pageInfo #sec_problem .problem_heading span {
@@ -894,6 +963,9 @@ img {
         color: #fff;
         text-align: center;
         background: #42BDE0; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_problem .problem_heading span {
+            font-size: 1rem; } }
     #pageInfo #sec_problem .problem_intro {
       margin-bottom: 50px;
       text-align: center;
@@ -962,6 +1034,9 @@ img {
     text-align: center; }
     #pageInfo #sec_solution .solution_heading {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_solution .solution_heading {
+          margin-bottom: .5rem; } }
       #pageInfo #sec_solution .solution_heading div {
         text-align: center; }
       #pageInfo #sec_solution .solution_heading span {
@@ -973,6 +1048,9 @@ img {
         color: #EC6C4D;
         text-align: center;
         background: #FFFDB5; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_solution .solution_heading span {
+            font-size: 1rem; } }
     #pageInfo #sec_solution .solution_illustArea {
       display: inline-block;
       width: 800px;
@@ -1031,6 +1109,9 @@ img {
     text-align: center; }
     #pageInfo #sec_usage .usage_heading {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_usage .usage_heading {
+          margin-bottom: .5rem; } }
       #pageInfo #sec_usage .usage_heading div {
         text-align: center; }
       #pageInfo #sec_usage .usage_heading span {
@@ -1042,6 +1123,9 @@ img {
         color: #fff;
         text-align: center;
         background: #EC6C4D; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_usage .usage_heading span {
+            font-size: 1rem; } }
     #pageInfo #sec_usage .usage_description {
       display: inline-block;
       margin-bottom: 30px;
@@ -1079,6 +1163,9 @@ img {
     text-align: center; }
     #pageInfo #sec_faq .faq_heading {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_faq .faq_heading {
+          margin-bottom: .5rem; } }
       #pageInfo #sec_faq .faq_heading div {
         text-align: center; }
       #pageInfo #sec_faq .faq_heading span {
@@ -1090,6 +1177,9 @@ img {
         color: #7C7E80;
         text-align: center;
         background: transparent; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_faq .faq_heading span {
+            font-size: 1rem; } }
     #pageInfo #sec_faq .faq_illustArea {
       display: inline-block;
       width: 800px;
@@ -1170,6 +1260,9 @@ img {
     background-size: 8px 8px; }
     #pageInfo #sec_creator .creator_heading {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_creator .creator_heading {
+          margin-bottom: .5rem; } }
       #pageInfo #sec_creator .creator_heading div {
         text-align: center; }
       #pageInfo #sec_creator .creator_heading span {
@@ -1181,6 +1274,9 @@ img {
         color: #7C7E80;
         text-align: center;
         background: #fff; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_creator .creator_heading span {
+            font-size: 1rem; } }
     #pageInfo #sec_creator .creator_profile {
       margin-bottom: 30px;
       width: 100%;
@@ -1235,6 +1331,9 @@ img {
     text-align: center; }
     #pageInfo #sec_request .request_heading {
       margin-bottom: 1rem; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_request .request_heading {
+          margin-bottom: .5rem; } }
       #pageInfo #sec_request .request_heading div {
         text-align: center; }
       #pageInfo #sec_request .request_heading span {
@@ -1246,6 +1345,9 @@ img {
         color: #7C7E80;
         text-align: center;
         background: transparent; }
+        @media screen and (max-width: 850px) {
+          #pageInfo #sec_request .request_heading span {
+            font-size: 1rem; } }
     #pageInfo #sec_request .request_description {
       margin-bottom: 20px;
       text-align: center; }
