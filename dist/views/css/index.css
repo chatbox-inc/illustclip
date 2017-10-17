@@ -947,6 +947,11 @@ img {
     background-image: linear-gradient(-45deg, transparent 25%, #E6E6E6 25%, #E6E6E6 50%, transparent 50%, transparent 75%, #E6E6E6 75%, #E6E6E6);
     background-size: 8px 8px;
     padding-top: 50px; }
+    @media screen and (max-width: 850px) {
+      #pageInfo #sec_problem {
+        padding-top: 30px;
+        height: auto;
+        padding-bottom: 50px; } }
     #pageInfo #sec_problem .problem_heading {
       margin-bottom: 1rem; }
       @media screen and (max-width: 850px) {
@@ -972,12 +977,20 @@ img {
       font-weight: bold;
       font-size: 1.3rem;
       line-height: 1.5; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_intro {
+          font-size: .9rem;
+          margin-bottom: 1rem; } }
     #pageInfo #sec_problem .problem_textarea {
       display: inline-block;
       width: 850px;
       max-width: 850px;
       height: 315px;
       position: relative; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_textarea {
+          width: 100%;
+          max-width: 100%; } }
     #pageInfo #sec_problem .problem_textBox01, #pageInfo #sec_problem .problem_textBox02 {
       background: #fff;
       border-radius: 99999px;
@@ -985,49 +998,100 @@ img {
       font-size: 1rem;
       line-height: 1.5;
       padding: 40px; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_textBox01, #pageInfo #sec_problem .problem_textBox02 {
+          width: 70%;
+          max-width: 100%;
+          font-size: .8rem;
+          padding: 25px; } }
     #pageInfo #sec_problem .problem_textBox01 {
       position: absolute;
       top: 0;
       left: 0; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_textBox01 {
+          margin-bottom: 1rem;
+          position: static; } }
     #pageInfo #sec_problem .problem_textBox02 {
       position: absolute;
       bottom: 0;
       right: 0; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_textBox02 {
+          position: static; } }
     #pageInfo #sec_problem .problem_textBox_titel {
       margin-bottom: 10px;
       font-size: 1.2rem;
       font-weight: bold;
       color: #29afdd; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .problem_textBox_titel {
+          font-size: 1rem; } }
     #pageInfo #sec_problem .illust_designer01 {
       width: 180px;
       height: auto;
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0); }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .illust_designer01 {
+          width: 25%;
+          top: 30%;
+          left: auto;
+          right: 0;
+          transform: translate(0, 0); } }
+    @media screen and (max-width: 850px) {
+      #pageInfo #sec_problem .sample_expression {
+        text-align: left;
+        position: absolute;
+        left: 0;
+        top: 100px; } }
     #pageInfo #sec_problem .sample_bad {
       width: 80px;
       height: auto;
       position: absolute;
       bottom: 70px;
       left: 90px; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .sample_bad {
+          position: static;
+          max-width: 48px; } }
     #pageInfo #sec_problem .sample_good {
       width: 70px;
       height: auto;
       position: absolute;
       bottom: 25px;
       left: 170px; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .sample_good {
+          position: static;
+          max-width: 40px; } }
+    @media screen and (max-width: 850px) {
+      #pageInfo #sec_problem .sample_woman {
+        text-align: right;
+        position: absolute;
+        right: 40px;
+        bottom: 0; } }
     #pageInfo #sec_problem .sample_woman01 {
       width: 75px;
       height: auto;
       position: absolute;
       top: 70px;
       right: 175px; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .sample_woman01 {
+          position: static;
+          max-width: 48px; } }
     #pageInfo #sec_problem .sample_woman02 {
       width: 75px;
       height: auto;
       position: absolute;
       top: 30px;
       right: 95px; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_problem .sample_woman02 {
+          position: static;
+          max-width: 48px; } }
   #pageInfo #sec_solution {
     padding-top: 50px;
     height: 750px;
@@ -1056,6 +1120,10 @@ img {
       width: 800px;
       height: 500px;
       position: relative; }
+      @media screen and (max-width: 850px) {
+        #pageInfo #sec_solution .solution_illustArea {
+          width: 100%;
+          height: auto; } }
     #pageInfo #sec_solution .illust_designer02 {
       width: 180px;
       height: auto;

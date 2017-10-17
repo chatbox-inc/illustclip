@@ -188,6 +188,12 @@
   background-size: 8px 8px;
   padding-top: 50px;
 
+  @include mediaSP {
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
   .problem_heading {
     @include info_heading(#fff,$clr_blue)
   }
@@ -198,6 +204,12 @@
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 1.5;
+
+    @include mediaSP {
+      font-size: .9rem;
+      margin-bottom: 1rem;
+    }
+
   }
   .problem_textarea {
     display: inline-block;
@@ -205,6 +217,11 @@
     max-width: 850px;
     height: 315px;
     position: relative;
+
+    @include mediaSP {
+      width: 100%;
+      max-width: 100%;
+    }
   }
   .problem_textBox01,.problem_textBox02 {
     background: #fff;
@@ -214,22 +231,39 @@
     line-height: 1.5;
     padding: 40px;
 
+    @include mediaSP {
+      width: 70%;
+      max-width: 100%;
+      font-size: .8rem;
+      padding: 25px;
+    }
+
   }
   .problem_textBox01 {
     position: absolute;
     top: 0;
     left: 0;
+    @include mediaSP {
+      margin-bottom: 1rem;
+      position: static;
+    }
   }
   .problem_textBox02 {
     position: absolute;
     bottom: 0;
     right: 0;
+    @include mediaSP {
+      position: static;
+    }
   }
   .problem_textBox_titel {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #29afdd;
+    @include mediaSP {
+      font-size: 1rem;
+    }
   }
   .illust_designer01 {
     width: 180px;
@@ -237,6 +271,24 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
+
+    @include mediaSP {
+      width: 25%;
+      top: 30%;
+      left: auto;
+      right: 0;
+      transform: translate(0,0);
+    }
+
+  }
+  .sample_expression {
+   @include mediaSP {
+    text-align: left;
+     position: absolute;
+     left: 0;
+     top: 100px;
+   }
+
   }
   .sample_bad {
     width: 80px;
@@ -244,6 +296,11 @@
     position: absolute;
     bottom: 70px;
     left: 90px;
+
+    @include mediaSP {
+      position: static;
+      max-width: 48px;
+    }
   }
   .sample_good {
     width: 70px;
@@ -251,6 +308,18 @@
     position: absolute;
     bottom: 25px;
     left: 170px;
+    @include mediaSP {
+      position: static;
+      max-width: 40px;
+    }
+  }
+  .sample_woman {
+    @include mediaSP {
+      text-align: right;
+      position: absolute;
+      right: 40px;
+      bottom: 0;
+    }
   }
   .sample_woman01 {
     width: 75px;
@@ -258,6 +327,10 @@
     position: absolute;
     top: 70px;
     right: 175px;
+    @include mediaSP {
+      position: static;
+      max-width: 48px;
+    }
   }
   .sample_woman02 {
     width: 75px;
@@ -265,6 +338,10 @@
     position: absolute;
     top: 30px;
     right: 95px;
+    @include mediaSP {
+      position: static;
+      max-width: 48px;
+    }
   }
 
 
@@ -282,6 +359,11 @@
     width: 800px;
     height: 500px;
     position: relative;
+
+    @include mediaSP {
+      width: 100%;
+      height: auto;
+    }
   }
   .illust_designer02 {
     width: 180px;
