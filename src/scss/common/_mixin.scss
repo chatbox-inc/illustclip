@@ -41,37 +41,42 @@
   border: solid 1px #EA6D53;
   color: #EA6D53;
   outline: none;
-  //transition: ease 0.4s;
-  @media screen and(max-width: 500px){
-    width:150px;
+  transition: ease 0.4s;
+  &:hover{
+    background:#EA6D53;
+    color:#fff;
+
   }
-  //&:hover{
-  //  background:#EA6D53;
-  //  color:#fff;
-  //
-  //}
 }
 @mixin orange-button(){
-  width: 210px;
+  display: inline-block;
   border-radius: 30px;
   padding: 8px 35px 8px 35px;
   font-size: 13px;
   background: #EA6D53;
   text-decoration: none;
-  border: solid 0px;
   color: #fff;
   outline: none;
-  //transition: ease 0.4s;
-  //&:hover{
-  //  background:#fff;
-  //  color:#EA6D53;
-  //  border:solid 1px #EA6D53;
-  //
-  //}
+
+  span {
+    display: inline-block;
+    margin-right: .2rem;
+  }
+  i {
+    font-size: 1rem;
+  }
+  &:hover{
+    opacity: .7;
+  }
 }
 
 @mixin info_heading($textColor,$bgColor) {
   margin-bottom: 1rem;
+
+  @include mediaSP {
+    margin-bottom: .5rem;
+  }
+
   div {
     text-align: center;
   }
@@ -84,6 +89,32 @@
     color: $textColor;
     text-align: center;
     background: $bgColor,;
+    @include mediaSP {
+      font-size: 1rem;
+    }
   }
 }
 
+
+@mixin btn_backTop(){
+  display: inline-block;
+  border-radius: 30px;
+  padding: 8px 35px 8px 35px;
+  font-size: 13px;
+  background: #fff;
+  text-decoration: none;
+  border: solid 1px #EA6D53;
+  color: #EA6D53;
+  outline: none;
+
+  span {
+    display: inline-block;
+    margin-right: .2rem;
+  }
+  i {
+    font-size: 1rem;
+  }
+  &:hover{
+    opacity: .7;
+  }
+}

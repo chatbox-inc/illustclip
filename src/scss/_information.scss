@@ -8,6 +8,10 @@
   position: relative;
   height: 560px;
 
+  @include mediaSP {
+    height: 120vw;
+  }
+
   .concept_textarea {
     display: inline-block;
     margin-top: 110px;
@@ -18,6 +22,13 @@
     transform: translate(-50%,0);
     z-index: 10;
 
+    @include mediaSP {
+      width: 100%;
+      max-width: 250px;
+      margin-top: 2rem;
+      top: 0;
+    }
+
     .concept_heading {
       @include info_heading($clr_orange,#fff)
     }
@@ -27,6 +38,10 @@
       font-weight: 500;
       font-size: 1.1rem;
       line-height: 2;
+
+      @include mediaSP {
+        font-size: .9rem;
+      }
     }
   }
   .concept_images {
@@ -36,17 +51,35 @@
     height: 100%;
     position: relative;
 
+    @include mediaSP {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
     .illust_clip {
       position: absolute;
       width: 160px;
       top: -30px;
       right: 70px;
+      @include mediaSP {
+        width: 20%;
+        min-width: 80px;
+        top: 0;
+        right: 0;
+      }
     }
     .illust_guide01 {
       position: absolute;
       width: 220px;
       top: 100px;
       left: 0;
+
+      @include mediaSP {
+        width: 120px;
+        bottom: 0;
+        top: auto;
+      }
     }
 
     .circle01s {
@@ -59,6 +92,9 @@
       background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
       background-size: 8px 8px;
       transform: rotate(10deg);
+      @include mediaSP {
+        display: none;
+      }
     }
     .circle02s {
       position: absolute;
@@ -70,6 +106,9 @@
       background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
       background-size: 8px 8px;
       transform: rotate(10deg);
+      @include mediaSP {
+        display: none;
+      }
     }
     .circle03s {
       position: absolute;
@@ -81,6 +120,9 @@
       background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
       background-size: 8px 8px;
       transform: rotate(10deg);
+      @include mediaSP {
+        display: none;
+      }
     }
     .circle04 {
       position: absolute;
@@ -91,27 +133,50 @@
       background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
       background-size: 8px 8px;
       right: 100px;
+      @include mediaSP {
+        width: 100%;
+        height: auto;
+        padding: 50%;
+        box-sizing: border-box;
+        right: -30px;
+        top: 40px;
+      }
     }
     .circle05 {
       width: 470px;
       height: 470px;
-      border-radius: 100%;
+      border-radius: 50%;
       background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
       background-size: 8px 8px;
       transform: rotate(10deg);
       position: absolute;
       top: 10px;
       left: 80px;
+      @include mediaSP {
+        width: 100%;
+        height: auto;
+        padding: 50%;
+        box-sizing: border-box;
+        top: 30px;
+        left: -30px;
+      }
     }
     .circle06 {
       width: 500px;
       height: 500px;
-      border-radius: 100%;
+      border-radius: 50%;
       background: $clr_orange;
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%,0);
+      @include mediaSP {
+        width: 100%;
+        height: auto;
+        padding: 50%;
+        box-sizing: border-box;
+        top: 10px;
+      }
     }
   }
 }
@@ -123,6 +188,12 @@
   background-size: 8px 8px;
   padding-top: 50px;
 
+  @include mediaSP {
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
   .problem_heading {
     @include info_heading(#fff,$clr_blue)
   }
@@ -133,6 +204,12 @@
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 1.5;
+
+    @include mediaSP {
+      font-size: .9rem;
+      margin-bottom: 1rem;
+    }
+
   }
   .problem_textarea {
     display: inline-block;
@@ -140,6 +217,11 @@
     max-width: 850px;
     height: 315px;
     position: relative;
+
+    @include mediaSP {
+      width: 100%;
+      max-width: 100%;
+    }
   }
   .problem_textBox01,.problem_textBox02 {
     background: #fff;
@@ -149,22 +231,39 @@
     line-height: 1.5;
     padding: 40px;
 
+    @include mediaSP {
+      width: 70%;
+      max-width: 100%;
+      font-size: .8rem;
+      padding: 25px;
+    }
+
   }
   .problem_textBox01 {
     position: absolute;
     top: 0;
     left: 0;
+    @include mediaSP {
+      margin-bottom: 1rem;
+      position: static;
+    }
   }
   .problem_textBox02 {
     position: absolute;
     bottom: 0;
     right: 0;
+    @include mediaSP {
+      position: static;
+    }
   }
   .problem_textBox_titel {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: bold;
     color: #29afdd;
+    @include mediaSP {
+      font-size: 1rem;
+    }
   }
   .illust_designer01 {
     width: 180px;
@@ -172,6 +271,24 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
+
+    @include mediaSP {
+      width: 25%;
+      top: 30%;
+      left: auto;
+      right: 0;
+      transform: translate(0,0);
+    }
+
+  }
+  .sample_expression {
+   @include mediaSP {
+    text-align: left;
+     position: absolute;
+     left: 0;
+     top: 100px;
+   }
+
   }
   .sample_bad {
     width: 80px;
@@ -179,6 +296,11 @@
     position: absolute;
     bottom: 70px;
     left: 90px;
+
+    @include mediaSP {
+      position: static;
+      max-width: 48px;
+    }
   }
   .sample_good {
     width: 70px;
@@ -186,6 +308,18 @@
     position: absolute;
     bottom: 25px;
     left: 170px;
+    @include mediaSP {
+      position: static;
+      max-width: 40px;
+    }
+  }
+  .sample_woman {
+    @include mediaSP {
+      text-align: right;
+      position: absolute;
+      right: 40px;
+      bottom: 0;
+    }
   }
   .sample_woman01 {
     width: 75px;
@@ -193,6 +327,10 @@
     position: absolute;
     top: 70px;
     right: 175px;
+    @include mediaSP {
+      position: static;
+      max-width: 48px;
+    }
   }
   .sample_woman02 {
     width: 75px;
@@ -200,6 +338,10 @@
     position: absolute;
     top: 30px;
     right: 95px;
+    @include mediaSP {
+      position: static;
+      max-width: 48px;
+    }
   }
 
 
@@ -217,6 +359,11 @@
     width: 800px;
     height: 500px;
     position: relative;
+
+    @include mediaSP {
+      width: 100%;
+      height: auto;
+    }
   }
   .illust_designer02 {
     width: 180px;
@@ -337,7 +484,7 @@
   padding-top: 50px;
   text-align: center;
   .faq_heading {
-    @include info_heading($clr_gray,#fff);
+    @include info_heading($clr_gray,transparent);
   }
   .faq_illustArea {
     display: inline-block;
@@ -353,7 +500,7 @@
     }
     .illust_guide03 {
       display: inline-block;
-      width: 130px;
+      width: 145px;
       height: auto;
       position: absolute;
       right: 0;
@@ -365,11 +512,13 @@
   }
   .faq_question {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 20px;
     width: 450px;
     min-height: 60px;
-
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.6;
     border-radius: 30px;
     box-sizing: border-box;
     background: #fff;
@@ -379,18 +528,26 @@
       content: "";
       position: absolute;
       top: 50%;
-      left: -30px;
+      left: -27px;
       margin-top: -15px;
       border: 15px solid transparent;
       border-right: 15px solid #fff;
     }
+    &::first-letter {
+      margin-right: .5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $clr_orange;
+    }
   }
   .faq_answer {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px;
     width: 450px;
     min-height: 60px;
+    font-size: 1.1rem;
+    line-height: 1.6;
     border-radius: 30px;
     box-sizing: border-box;
     background: $clr_light-yellow;
@@ -400,711 +557,70 @@
       content: "";
       position: absolute;
       top: 50%;
-      right: -30px;
+      right: -27px;
       margin-top: -15px;
       border: 15px solid transparent;
       border-left: 15px solid $clr_light-yellow;
     }
+    &::first-letter {
+      margin-right: .5rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: $clr_orange;
+    }
   }
-
-
-
 }
-@media screen and(max-width: 2000px) {
 
-  .terms {
-    height: 900px;
-    padding-top: 50px;
-    .title {
-      text-align: center;
-      margin-bottom: 50px;
-      font-size: 28px;
-      font-weight: bold;
-      color: $clr_gray;
-    }
-    .baloon {
-      position: relative;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 500px;
-      height: 100px;
-      border-radius: 30px;
-      .baloon-mouth {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 5px;
-        transform: rotate(45deg);
-      }
-    }
-    .baloon01 {
-      background: $clr_white;
-      .baloon-mouth01 {
-        top: 25px;
-        left: -15px;
-        background: $clr_white;
-      }
-    }
-    .baloon02 {
-      background: $clr_light-yellow;
-      .baloon-mouth02 {
-        top: 25px;
-        left: 460px;
-        background: $clr_light-yellow;
-      }
-    }
-    .baloon-text {
-      position: absolute;
-      margin: 20px;
-      line-height: 30px;
-      text-align: center;
-      color: $clr_gray;
-    }
-    .illust-area {
-      position: relative;
-      .designer03 {
-        position: absolute;
-        width: 170px;
-        top: -820px;
-        left: -100px;
-      }
-      .guide03 {
-        position: absolute;
-        width: 200px;
-        top: -350px;
-        left: 650px;
-      }
-    }
+#sec_creator {
+  padding-top: 50px;
+  text-align: center;
+  background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
+  background-size: 8px 8px;
+  .creator_heading {
+    @include info_heading($clr_gray,#fff);
   }
-  .profile {
-    height: 410px;
-    background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
-    background-size: 8px 8px;
-    padding-top: 50px;
-    .title {
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 150px;
-      height: 40px;
-      border-radius: 2px;
-      background: $clr_white;
-      line-height: 40px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: $clr_gray;
-    }
-    .introduction {
-      margin: 0 auto;
-      width: 570px;
-      .icon {
-        float: left;
-        margin-left: 70px;
-        margin-right: 30px;
-        margin-bottom: 60px;
-        width: 170px;
+  .creator_profile {
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+    .creator_profile_img {
+      display: inline-block;
+      width: 40%;
+      text-align: right;
+      vertical-align: top;
+      img {
+        width: 100%;
+        max-width: 200px;
         border-radius: 50%;
       }
-      .name {
-        font-size: 22px;
-        color: $clr_gray;
+    }
+    .creator_profile_detail {
+      display: inline-block;
+      padding-left: 30px;
+      width: 40%;
+      vertical-align: top;
+      box-sizing: border-box;
+
+      .creator_profile_name {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .creator_profile_position {
+        font-size: 1.1rem;
         margin-bottom: 20px;
       }
-      .position {
-        font-size: 18px;
-        color: $clr_gray;
-        margin-bottom: 20px;
-      }
-      .description {
-        color: $clr_gray;
-        line-height: 30px;
-      }
-    }
-    .link {
-      display: block;
-      margin: 0 auto;
-      margin-top: 30px;
-      padding: 0 20px;
-      width: 270px;
-      height: 40px;
-      border-radius: 40px;
-      line-height: 40px;
-      background: $clr_orange;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: none;
-      color: $clr_white;
-      .symbol {
-        width: 15px;
-        margin-left: 8px;
+      .creator_profile_description {
+        line-height: 1.8;
       }
     }
   }
-  .forms {
-    height: 700px;
-    padding-top: 50px;
-    .title {
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: $clr_gray;
-    }
-    .description {
-      margin: 0 auto;
-      margin-bottom: 30px;
-      width: 600px;
-      line-height: 30px;
-      text-align: center;
-      font-weight: bold;
-      color: $clr_gray;
-    }
-    .form {
-      width: 600px;
-      margin: 0 auto;
-      .label {
-        display: inline-block;
-        width: 60px;
-        color: $clr_gray;
-      }
-      input, textarea {
-        color: $clr_gray;
-        font-size: 16px;
-      }
-      .name {
-        margin-bottom: 30px;
-        padding-left: 20px;
-        width: 500px;
-        height: 40px;
-        border-radius: 40px;
-        outline: none;
-        border: 0;
-      }
-      .content {
-        padding-left: 20px;
-        padding-top: 20px;
-        width: 500px;
-        height: 200px;
-        vertical-align:top;
-        border-radius: 40px;
-        resize: none;
-        outline: none;
-        border: 0;
-      }
-    }
-    .confirm {
-      display: block;
-      margin: 0 auto;
-      margin-top: 30px;
-      margin-bottom: 60px;
-      padding: 0 20px;
-      width: 150px;
-      height: 40px;
-      border-radius: 40px;
-      line-height: 40px;
-      background: $clr_orange;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: none;
-      color: $clr_white;
-    }
-    .top {
-      display: block;
-      margin: 0 auto;
-      margin-top: 30px;
-      padding: 0 20px;
-      width: 200px;
-      height: 40px;
-      border-radius: 40px;
-      border: 1px solid $clr_orange;
-      line-height: 40px;
-      background: $clr_white;
-      text-align: center;
-      font-weight: bold;
-      text-decoration: none;
-      color: $clr_orange;
-    }
-  }
-}
-
-// Smart Phone
-.container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.site-navi {
-  font-size: 14px;
-  padding: 25px 0px 25px 0px;
-  & .arrow {
-    margin: 0 10px 0 10px;
-    color: $clr_gray;
-  }
-  & a {
-    text-decoration: none;
-    color: $clr_gray;
-  }
-}
-
-.concept {
-  .background-images {
-    margin: 20px auto;
-    width: 500px;
-    height: 10px;
-    position: relative;
-    z-index: -1000;
-    .circle06 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 500px;
-      height: 500px;
-      border-radius: 100%;
-      background: $clr_orange;
-    }
-    .circle01s {
-      position: absolute;
-      top: 25px;
-      left: -60px;
-      width: 70px;
-      height: 70px;
-      border-radius: 100%;
-      background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-      background-size: 8px 8px;
-      transform: rotate(10deg);
-    }
-    .circle02s {
-      position: absolute;
-      top: 150px;
-      right: -140px;
-      width: 70px;
-      height: 70px;
-      border-radius: 100%;
-      background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
-      background-size: 8px 8px;
-      transform: rotate(10deg);
-    }
-    .circle03s {
-      position: absolute;
-      top: 430px;
-      right: -20px;
-      width: 45px;
-      height: 45px;
-      border-radius: 100%;
-      background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-      background-size: 8px 8px;
-      transform: rotate(10deg);
-    }
-    .circle04 {
-      position: absolute;
-      top: 30px;
-      left: 50px;
-      width: 470px;
-      height: 470px;
-      border-radius: 100%;
-      background-image: linear-gradient(-45deg, transparent 25%, $clr_smoke-orange 25%, $clr_smoke-orange 50%, transparent 50%, transparent 75%, $clr_smoke-orange 75%, $clr_smoke-orange);
-      background-size: 8px 8px;
-      transform: rotate(10deg);
-      z-index: 1;
-    }
-    .circle05 {
-      position: absolute;
-      top: 30px;
-      left: -25px;
-      width: 470px;
-      height: 470px;
-      border-radius: 100%;
-      background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-      background-size: 8px 8px;
-      transform: rotate(10deg);
-      z-index: -1;
-    }
-    .illust_clip {
-      position: absolute;
-      width: 160px;
-      top: -30px;
-      right: -50px;
-    }
-    .illust_guide01 {
-      position: absolute;
-      width: 200px;
-      top: 100px;
-      left: -130px;
-      z-index: 1000;
-    }
-  }
-  .concept-textarea {
-    width: 100%;
-    padding: 40px 0;
-    margin-bottom: 190px;
-    text-align: center;
-    .concept-box {
-      display: inline-block;
-      padding: 12px 20px;
-      background: white;
-      color: $clr_orange;
-      font-size: 1.6rem;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 13px;
-    }
-    .concept-text {
-      padding: 15px 0;
-      color: white;
-      font-weight: 500;
-      font-size: 1.1rem;
-      line-height: 2;
-    }
-  }
-}
-
-.trouble-point {
-  height: 600px;
-  background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
-  background-size: 8px 8px;
-  padding-top: 50px;
-  .title {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 500px;
-    height: 60px;
-    border-radius: 2px;
-    background: $clr_blue;
-    line-height: 60px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: $clr_white;
-  }
-  .ask {
-    color: $clr_gray;
-    text-align: center;
-    font-weight: bold;
-  }
-  .illust-area {
-    margin: 0;
-    padding: 0;
-    height: 500px;
-    position: relative;
-    .box {
-      position: absolute;
-      width: 400px;
-      height: 150px;
-      border-radius: 150px;
-      background: $clr_white;
-      padding: 20px;
-    }
-    .box-title {
-      margin-top: 20px;
-      margin-bottom: 10px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      color: $clr_blue;
-    }
-
-    .box-description {
-      margin: 0 40px;
-      line-height: 25px;
-      color: $clr_gray;
-    }
-    .box1 {
-      top: 50px;
-      left: -140px;
-    }
-    .box2 {
-      top: 210px;
-      left: 410px;
-    }
-    .bad {
-      position: absolute;
-      width: 100px;
-      top: 220px;
-      left: -20px;
-    }
-    .good {
-      position: absolute;
-      width: 90px;
-      top: 240px;
-      left: 90px;
-    }
-    .designer01 {
-      position: absolute;
-      width: 200px;
-      top: 50px;
-      left: 260px;
-    }
-    .woman01 {
-      position: absolute;
-      width: 100px;
-      top: 130px;
-      left: 510px;
-    }
-    .woman02 {
-      position: absolute;
-      width: 100px;
-      top: 80px;
-      left: 630px;
-    }
-  }
-}
-
-.solution {
-  padding-top: 50px;
-  height: 800px;
-  .title {
-    height: 50px;
-    margin: 0 auto;
-    border-radius: 2px;
-    line-height: 50px;
-    background: $clr_light-yellow;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: $clr_orange;
-  }
-  .title01 {
-    width: 300px;
-  }
-  .title02 {
-    margin-top: 10px;
-    width: 500px;
-  }
-  .illust-area {
-    position: relative;
-    height: 70%;
-    .designer02 {
-      position: absolute;
-      width: 200px;
-      top: 250px;
-      left: -110px;
-      transform: rotate(-10deg);
-    }
-    .illustclip {
-      position: absolute;
-      width: 600px;
-      top: 50px;
-      left: 40px;
-    }
-    .guide04 {
-      position: absolute;
-      width: 200px;
-      top: 250px;
-      left: 630px;
-      transform: rotate(10deg);
-    }
-    .description {
-      position: absolute;
-      width: 500px;
-      top: 420px;
-      left: 120px;
-      line-height: 30px;
-      text-align: center;
-      color: $clr_gray;
-    }
-  }
-  .points {
-    text-align: center;
-    .point {
-      display: inline-block;
-      width: 170px;
-      height: 30px;
-      border-radius: 45px;
-      padding-top: 15px;
-      background: $clr_orange;
-      color: $clr_white;
-    }
-    .point:not(last-child) {
-      margin-right: 30px;
-    }
-  }
-}
-
-.usage {
-  height: 530px;
-  background-image: linear-gradient(-45deg, transparent 25%, $clr_yellow 25%, $clr_yellow 50%, transparent 50%, transparent 75%, $clr_yellow 75%, $clr_yellow);
-  background-size: 8px 8px;
-  padding-top: 50px;
-  .title {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 350px;
-    height: 40px;
-    border-radius: 2px;
-    line-height: 40px;
-    background: $clr_smoke-orange;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: $clr_white;
-  }
-  .description {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 600px;
-    line-height: 30px;
-    text-align: center;
-    color: $clr_gray;
-  }
-  .scenes {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  .scene {
-    margin: 20px;
-  }
-  .scene-img-wrapper {
-    position: relative;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 200px;
-    background: $clr_white;
-    border-radius: 50%;
-    .scene-img {
-      position: absolute;
-      margin: 0 auto;
-      width: 120px;
-    }
-    .pc {
-      top: 20%;
-      left: 20%;
-    }
-    .proposal {
-      top: 30%;
-      left: 20%;
-    }
-    .slide {
-      top: 25%;
-      left: 20%;
-    }
-  }
-  .scene-title {
-    margin-bottom: 20px;
-    width: 220px;
-    text-align: center;
-    font-weight: bold;
-    color: $clr_gray;
-  }
-}
-.terms {
-  height: 900px;
-  padding-top: 50px;
-  .title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 28px;
-    font-weight: bold;
-    color: $clr_gray;
-  }
-  .baloon {
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 500px;
-    width: 90%;
-    height: 100px;
-    border-radius: 30px;
-    .baloon-mouth {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 5px;
-      transform: rotate(45deg);
-    }
-  }
-  .baloon01 {
-    background: $clr_white;
-    .baloon-mouth01 {
-      top: 10px;
-      left: -15px;
-      background: $clr_white;
-    }
-  }
-  .baloon02 {
-    background: $clr_light-yellow;
-    .baloon-mouth02 {
-      top: 25px;
-      left: 460px;
-      background: $clr_light-yellow;
-    }
-  }
-  .baloon-text {
-    position: absolute;
-    margin: 20px;
-    line-height: 30px;
-    text-align: center;
-    color: $clr_gray;
-  }
-  .illust-area {
-    position: relative;
-    width: 710px;
-    height: 200px;
-    .designer03 {
-      position: absolute;
-      max-width: 170px;
-      width: 28%;
-      top: -888px;
-      left: 1px;
-      z-index: -1;
-    }
-    .guide03 {
-      position: absolute;
-      width: 200px;
-      top: -350px;
-      left: 650px;
-    }
-  }
-}
-.profile {
-  height: 410px;
-  background-image: linear-gradient(-45deg, transparent 25%, $clr_light-gray 25%, $clr_light-gray 50%, transparent 50%, transparent 75%, $clr_light-gray 75%, $clr_light-gray);
-  background-size: 8px 8px;
-  .title {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    width: 150px;
-    height: 40px;
-    border-radius: 2px;
-    background: $clr_white;
-    line-height: 40px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: $clr_gray;
-  }
-  .introduction {
-    margin: 0 auto;
-    width: 570px;
-    .icon {
-      text-align: center;
-      max-width: 170px;
-      border-radius: 50%;
-    }
-    .name {
-      margin: 0 auto;
-      font-size: 22px;
-      color: $clr_gray;
-      margin-bottom: 20px;
-    }
-    .position {
-      margin-bottom: 20px;
-      font-size: 18px;
-      color: $clr_gray;
-    }
-    .description {
-      color: $clr_gray;
-      line-height: 30px;
-    }
-  }
-  .link {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
+  .btn_chatbox {
+    display: inline-block;
+    margin-bottom: 60px;
     padding: 0 20px;
-    max-width: 270px;
-    width: 80%;
+    max-width: 300px;
+    min-width:  250px;
     height: 40px;
     border-radius: 40px;
     line-height: 40px;
@@ -1112,100 +628,72 @@
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: $clr_white;
+    color: #fff;
+
+    &:hover {
+      opacity: .8;
+      transition: opacity .3s;
+    }
+
     .symbol {
       width: 15px;
       margin-left: 8px;
     }
   }
 }
-.forms {
-  height: 720px;
+
+#sec_request {
+  margin-bottom: 100px;
   padding-top: 50px;
-  .title {
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: $clr_gray;
+  text-align: center;
+
+  .request_heading {
+    @include info_heading($clr_gray,transparent);
   }
-  .description {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 600px;
-    width: 80%;
-    line-height: 30px;
+
+  .request_description {
+    margin-bottom: 20px;
     text-align: center;
-    font-weight: bold;
-    color: $clr_gray;
   }
-  .form {
-    max-width: 600px;
-    width: 100%;
+  .request_form {
+    width: 600px;
     margin: 0 auto;
-    .label {
-      display: none;
+    .request_form_name,.request_form_textarea {
+      border-radius: 30px;
+      background: #fff;
     }
-    input, textarea {
-      color: $clr_gray;
-      font-size: 16px;
+    .request_form_name {
+      margin-bottom: 20px;
+      text-align: left;
+      input {
+        background-color: transparent;
+        border: none;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+        outline: none;
+      }
     }
-    .name {
-      margin-left: 20px;
-      margin-bottom: 30px;
-      padding-left: 20px;
-      max-width: 500px;
-      width: 90%;
-      height: 40px;
-      border-radius: 40px;
-      outline: none;
-      border: 0;
-    }
-    .content {
-      margin-left: 20px;
-      padding-left: 20px;
-      padding-top: 20px;
-      max-width: 500px;
-      width: 90%;
-      height: 200px;
-      vertical-align: top;
-      border-radius: 40px;
-      resize: none;
-      outline: none;
-      border: 0;
+    .request_form_textarea {
+      margin-bottom: 20px;
+      text-align: left;
+      textarea {
+        background-color: transparent;
+        border: none;
+        box-sizing: border-box;
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        min-height: 200px;
+        font-size: 1rem;
+        outline: none;
+      }
     }
   }
-  .confirm {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0 20px;
-    width: 150px;
-    height: 40px;
-    border-radius: 40px;
-    line-height: 40px;
-    background: $clr_orange;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    color: $clr_white;
-  }
-  .top {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 0 20px;
-    width: 200px;
-    height: 40px;
-    border-radius: 40px;
-    border: 1px solid $clr_orange;
-    line-height: 40px;
-    background: $clr_white;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    color: $clr_orange;
+  .btn_confirm {
+    @include orange-button;
   }
 }
+
